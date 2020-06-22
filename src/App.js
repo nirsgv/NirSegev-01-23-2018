@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import './styles/main.scss';
 
 import {Router, Switch, Route, Link, NavLink} from "react-router-dom";
 import {createBrowserHistory} from "history";
@@ -8,14 +9,19 @@ import List from "./components/list";
 const customHistory = createBrowserHistory();
 
 function App() {
+    const navlinkProps = {
+        className: "main-nav__link",
+        activeClassName: "main-nav__link--active"
+    };
     return (
         <div className="App">
             <Router history={customHistory}>
 
                 <header className="App-header">
-                    <List baseClassName="main-nav" printBase={false}>
-                        <NavLink activeClassName="active" to="/weather">Weather</NavLink>
-                        <NavLink activeClassName="active" to="/favourites">Favourites</NavLink>
+
+                    <List baseClassName="main-nav">
+                        <NavLink {...navlinkProps} to="/weather">Weather</NavLink>
+                        <NavLink {...navlinkProps} activeClassName="main-nav__link--active" to="/favourites">Favourites</NavLink>
                     </List>
 
                 </header>

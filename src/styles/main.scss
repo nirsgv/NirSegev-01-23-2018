@@ -1,0 +1,19 @@
+@import 'mixins.scss';
+@import 'reset.scss';
+@import 'blocks/_main-nav.scss';
+
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+svg {
+    width: 1em;
+    fill: currentColor;
+    font-size: 2em;
+    text-align: center;
+    vertical-align: middle;
+    box-sizing: content-box;
+}

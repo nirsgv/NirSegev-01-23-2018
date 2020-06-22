@@ -1,0 +1,25 @@
+.main-nav {
+
+    &__wrap {
+        flex-grow: 1;
+    }
+
+    &__list {
+        display: flex;
+        flex-grow: 1;
+        margin-right: auto;
+    }
+
+    &__item {
+
+    }
+
+    &__link {
+
+        &--active {
+            color: white;
+        }
+    }
+
+
+}
