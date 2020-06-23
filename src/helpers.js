@@ -22,6 +22,16 @@ const getCurrentConditions = async (cityKey) => {
     return data[0];
 };
 
+const getFiveDayForecast = async (cityKey) => {
+    const base = `http://dataservice.accuweather.com/forecasts/v1/daily/5day/${cityKey}`;
+    const query = `?apikey=${key}`;
+
+    const response = await fetch (base + query);
+    const data = await response.json();
+    console.log(data);
+    return data;
+};
+
 const autoComplete = async (city) => {
     const base = 'http://dataservice.accuweather.com/locations/v1/cities/search';
     const query = `?apikey=${key}&q=${city}`;
@@ -40,5 +50,6 @@ const autoComplete = async (city) => {
 export {
     getCity,
     autoComplete,
-    getCurrentConditions
+    getCurrentConditions,
+    getFiveDayForecast
 }
