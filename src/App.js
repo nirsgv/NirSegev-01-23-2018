@@ -1,14 +1,20 @@
-import React from 'react';
-import './App.css';
+import React, { useState } from 'react';
 import './styles/main.scss';
 
-import {Router, Switch, Route, Link, NavLink} from "react-router-dom";
-import {createBrowserHistory} from "history";
+import { Router, Switch, Route, Link, NavLink } from "react-router-dom";
 import List from "./components/list";
+import Search from "./components/search";
+import SearchSuggestions from "./components/searchSuggestions";
+import {bindActionCreators} from "redux";
+import {connect} from "react-redux";
+import { setSearchValue, setDisplayedCity } from "./actions";
 
+import { createBrowserHistory } from "history";
+import CityExpansion from "./components/cityExpansion";
 const customHistory = createBrowserHistory();
 
-function App() {
+
+function App({ isDarkMode, searchVal, setSearchValue, mainCityDisplayKey, setDisplayedCity }) {
     const navlinkProps = {
         className: "main-nav__link",
         activeClassName: "main-nav__link--active"
@@ -30,6 +36,11 @@ function App() {
                     <Switch>
                         <Route path="/weather">
                             <h1>A</h1>
+                            <Search searchVal={searchVal} setSearchValue={setSearchValue}/>
+                            <SearchSuggestions searchVal={searchVal} setDisplayedCity={setDisplayedCity}/>
+                            <CityExpansion cityKey={mainCityDisplayKey}/>
+
+
                         </Route>
                         <Route path="/favourites">
                             <h1>B</h1>
@@ -42,4 +53,21 @@ function App() {
     );
 }
 
-export default App;
+
+const mapStateToProps = state => ({
+    isDarkMode: state.appData.isDarkMode,
+    searchVal: state.appData.searchVal,
+    mainCityDisplayKey: state.appData.mainCityDisplayKey,
+});
+
+const mapDispatchToProps = dispatch => bindActionCreators({
+    setSearchValue,
+    setDisplayedCity
+}, dispatch);
+
+
+
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(App);
