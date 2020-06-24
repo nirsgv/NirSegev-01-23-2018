@@ -75,7 +75,7 @@ function Suggestion({index, item, setDisplayedCity}) {
 }
 
 
-function SearchSuggestions({ searchVal, setDisplayedCity }) {
+function SearchSuggestions({ searchVal, setDisplayedCity, className }) {
 
     const [ completions, setCompletions ] = useState([]);
 
@@ -96,7 +96,7 @@ function SearchSuggestions({ searchVal, setDisplayedCity }) {
     }, [searchVal]);
 
     return (
-        <List baseClassName="suggestions">
+        <List baseClassName={className}>
             {
                 completions.map((item, index) => <Suggestion item={item} key={index} index={index} setDisplayedCity={setDisplayedCity}/>)
             }

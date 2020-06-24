@@ -13,7 +13,7 @@ import CityExpansion from "./containers/cityExpansion";
 const customHistory = createBrowserHistory();
 
 
-function App({ isDarkMode, searchVal, setSearchValue, mainCityDisplayKey, setDisplayedCity, favCities, toggleFavCity }) {
+function App({  }) {
     const navlinkProps = {
         className: "main-nav__link",
         activeClassName: "main-nav__link--active"
@@ -27,7 +27,7 @@ function App({ isDarkMode, searchVal, setSearchValue, mainCityDisplayKey, setDis
                     <div className="header__controls"></div>
                     <List baseClassName="main-nav" addClass={"header__main-nav"}>
                         <NavLink {...navlinkProps} to="/weather">Weather</NavLink>
-                        <NavLink {...navlinkProps} activeClassName="main-nav__link--active" to="/favorites">Favorites</NavLink>
+                        <NavLink {...navlinkProps} to="/favorites">Favorites</NavLink>
                     </List>
 
                 </header>
@@ -37,7 +37,6 @@ function App({ isDarkMode, searchVal, setSearchValue, mainCityDisplayKey, setDis
                         <Route path="/weather">
                             <Search />
                             <CityExpansion />
-
                         </Route>
                         <Route path="/favorites">
                             <Favorites />
