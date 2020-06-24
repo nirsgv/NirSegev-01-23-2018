@@ -32,7 +32,8 @@ function CurrentWeather({ cityKey }) {
             <div className="city-name">{cityName}</div>
             <div className="icon">{cityWeather.weatherIcon}</div>
             <div className="text">{cityWeather.weatherText}</div>
-            <div className="temp">{cityWeather.temp && cityWeather.temp.Maximum && getAverage(cityWeather.temp.Maximum.Value, cityWeather.temp.Minimum.Value)}</div>
+            {/*<div className="temp">{cityWeather.temp && cityWeather.temp.Maximum && getAverage(cityWeather.temp.Maximum.Value, cityWeather.temp.Minimum.Value)}</div>*/}
+            <div className="temp">{cityWeather.temp && cityWeather.temp.Imperial.Value}</div>
         </div>
     )
 }

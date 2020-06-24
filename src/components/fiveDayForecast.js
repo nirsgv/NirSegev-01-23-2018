@@ -5,21 +5,21 @@ import List from "./list";
 
 
 
-function DailyForecast({ day }) {
+function DailyForecast({ day, baseClassName }) {
     const { date, temp } = day,
           { Maximum, Minimum } = temp,
           dayTitle = new Date(date).toDateString().split(' ')[0],
           tempAverage = getAverage(Maximum.Value, Minimum.Value);
 
     return (
-        <div>
-            <div>{dayTitle}</div>
-            <div>{`${tempAverage} ${Maximum.Unit}`}</div>
-        </div>
+        <>
+            <div className={`${baseClassName}__title`}>{dayTitle}</div>
+            <div className={`${baseClassName}__degree-num`}>{`${tempAverage} ${Maximum.Unit}`}</div>
+        </>
     )
 }
 
-function FiveDayForecast({ cityKey }) {
+function FiveDayForecast({ cityKey, baseClassName }) {
 
     const [ forecast, setForecast ] = useState(null);
 
@@ -36,8 +36,8 @@ function FiveDayForecast({ cityKey }) {
 
     return (
 
-        <List baseClassName={'daily'}>
-            {forecast && forecast.map((item, index) => <DailyForecast day={item} key={index} />)}
+        <List baseClassName={baseClassName}>
+            {forecast && forecast.map((item, index) => <DailyForecast day={item} key={index} baseClassName={baseClassName}/>)}
         </List>
     )
 }

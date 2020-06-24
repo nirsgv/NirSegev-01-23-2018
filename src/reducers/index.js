@@ -12,9 +12,10 @@ const checkLocal = () => {
 
 const initialAppState = {
     isDarkMode: false,
+    isFahrenheit: false,
     searchVal: '',
     mainCityDisplayKey: null,
-    favCities: checkLocal()
+    favCities: checkLocal(),
 };
 
 function appData(state = initialAppState, action) {

@@ -10,10 +10,12 @@ import { connect } from "react-redux";
 
 function CityExpansion({ cityKey, favCities, toggleFavCity }) {
     return (
-        <section className="city-expanded">
-            <CurrentWeather cityKey={cityKey} />
-            <FavToggle cityKey={cityKey} favCities={favCities} toggleFavCity={(cityKey, favCities) => toggleFavCity(cityKey, favCities)}/>
-            <FiveDayForecast cityKey={cityKey} />
+        <section className="city-detail">
+            <div className="city-detail__stats">
+                <CurrentWeather cityKey={cityKey} />
+                <FavToggle cityKey={cityKey} favCities={favCities} toggleFavCity={(cityKey, favCities) => toggleFavCity(cityKey, favCities)}/>
+            </div>
+            <FiveDayForecast cityKey={cityKey} baseClassName={'forecast'} />
         </section>
     )
 }
