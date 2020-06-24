@@ -21,14 +21,9 @@ function appData(state = initialAppState, action) {
     switch (action.type) {
 
         case TOGGLE_FAV_CITY:
-            const currentFav = state.favCities.includes(action.payload)
-                ? state.favCities.filter(item => item !== action.payload)
-                : action.payload
-                    ? state.favCities.concat(action.payload)
-                    : state.favCities;
             return {
                 ...state,
-                favCities: currentFav
+                favCities: action.payload
             };
 
         case TOGGLE_DARK_MODE:

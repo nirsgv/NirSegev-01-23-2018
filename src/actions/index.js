@@ -4,10 +4,19 @@ import { SET_DISPLAYED_CITY } from '../reducers';
 import { TOGGLE_FAV_CITY } from '../reducers';
 
 
-function toggleFavCity(val) {
+function toggleFavCity(cityKey, favCities) {
+
+    const currentFav = favCities.includes(cityKey)
+        ? favCities.filter(item => item !== cityKey)
+        : cityKey
+            ? favCities.concat(cityKey)
+            : favCities;
+
+    localStorage.setItem("weather-spa", JSON.stringify(currentFav));
+
     const action = {
         type: TOGGLE_FAV_CITY,
-        payload: val
+        payload: currentFav
     };
     return action;
 }
