@@ -3,15 +3,13 @@ import './styles/main.scss';
 
 import { Router, Switch, Route, Link, NavLink } from "react-router-dom";
 import List from "./components/list";
-import Search from "./components/search";
+import Search from "./containers/search";
 import Favorites from "./containers/favorites";
-import SearchSuggestions from "./components/searchSuggestions";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
-import { setSearchValue, setDisplayedCity, toggleFavCity } from "./actions";
 
 import { createBrowserHistory } from "history";
-import CityExpansion from "./components/cityExpansion";
+import CityExpansion from "./containers/cityExpansion";
 const customHistory = createBrowserHistory();
 
 
@@ -37,10 +35,8 @@ function App({ isDarkMode, searchVal, setSearchValue, mainCityDisplayKey, setDis
                 <main>
                     <Switch>
                         <Route path="/weather">
-                            <Search searchVal={searchVal} setSearchValue={setSearchValue} />
-                            <SearchSuggestions searchVal={searchVal} setDisplayedCity={setDisplayedCity} />
-                            <CityExpansion cityKey={mainCityDisplayKey} favCities={favCities} toggleFavCity={toggleFavCity}/>
-
+                            <Search />
+                            <CityExpansion />
 
                         </Route>
                         <Route path="/favorites">
@@ -57,15 +53,10 @@ function App({ isDarkMode, searchVal, setSearchValue, mainCityDisplayKey, setDis
 
 const mapStateToProps = state => ({
     isDarkMode: state.appData.isDarkMode,
-    searchVal: state.appData.searchVal,
-    mainCityDisplayKey: state.appData.mainCityDisplayKey,
-    favCities: state.appData.favCities,
 });
 
 const mapDispatchToProps = dispatch => bindActionCreators({
-    setSearchValue,
-    setDisplayedCity,
-    toggleFavCity
+
 }, dispatch);
 
 

@@ -7,17 +7,17 @@
     &__logo{
         flex-basis: 10rem;
         height: 100%;
-        @extend %center-ver
     }
 
     &__main-nav{
         flex-basis: 10rem;
-        @extend %center-ver
     }
 
     &__controls{
         flex-grow: 1;
+    }
+    
+    &__logo, &__main-nav, &__controls {
         @extend %center-ver
     }
-
 }
