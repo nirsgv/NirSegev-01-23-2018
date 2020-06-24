@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import {getAverage, getCity, getCurrentConditions} from "../helpers";
+import RasterSprite from "./rasterSprite";
 
 
 
@@ -30,7 +31,7 @@ function CurrentWeather({ cityKey }) {
     return (
         <div>
             <div className="city-name">{cityName}</div>
-            <div className="icon">{cityWeather.weatherIcon}</div>
+            <RasterSprite className="icon" iconNum={cityWeather.weatherIcon}/>
             <div className="text">{cityWeather.weatherText}</div>
             {/*<div className="temp">{cityWeather.temp && cityWeather.temp.Maximum && getAverage(cityWeather.temp.Maximum.Value, cityWeather.temp.Minimum.Value)}</div>*/}
             <div className="temp">{cityWeather.temp && cityWeather.temp.Imperial.Value}</div>
