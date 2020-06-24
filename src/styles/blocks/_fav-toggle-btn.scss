@@ -1,0 +1,24 @@
+.fav-toggle-btn {
+
+    color: #aaa;
+    cursor: pointer;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &.active {
+        color: red;
+    }
+    & > span {
+        transition: color 0.2s ease-in;
+
+    }
+
+    &__text {
+        font-size: .8rem;
+        color: #333333;
+    }
+
+}
