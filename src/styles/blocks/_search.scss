@@ -1,0 +1,42 @@
+.search {
+
+    display: flex;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(34, 33, 41, 0.15);
+    padding: 2rem 4rem;
+
+    &--focus {
+        border-color: rgba(34,33,41,0.5);
+
+    }
+
+    &--blur {
+
+    }
+
+    &__wrap {
+        flex-grow: 1;
+        //@media(hover: hover) and (pointer: fine) and (min-width: map-get($b-points, "mob")) {
+        //
+        //    &:hover .main-search__icon{
+        //        color: #888;
+        //    }
+        //}
+
+    }
+
+    &__icon {
+        position: absolute;
+        font-size: 0.7rem;
+        pointer-events: none;
+        color: #aaa;
+    }
+
+    &__input {
+        outline: none;
+        border: none;
+        background-color: transparent;
+        padding-left: 1rem;
+        width: 100%;
+    }
+}

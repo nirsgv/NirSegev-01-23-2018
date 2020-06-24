@@ -5,10 +5,8 @@
     }
 
     &__list {
-        display: flex;
-        //flex-grow: 1;
-        //margin-right: auto;
-        //height: 100%;
+        @extend %center-ver;
+        height: 100%;
     }
 
     &__item {
@@ -19,6 +17,7 @@
 
     &__link {
 
+        height: 100%;
         color: #888;
         text-decoration: none;
 
