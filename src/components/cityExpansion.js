@@ -1,21 +1,16 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import { getCurrentConditions } from '../helpers';
+import FiveDayForecast from "./fiveDayForecast";
+import CurrentWeather from "./currentWeather";
+import FavToggle from "./favToggle";
 
 
-function CityExpansion({ cityKey }) {
-
-    const [ cityDetails, setCityDetails ] = useState(123);
-
-    useEffect(() => {
-        cityKey && getCurrentConditions(cityKey)
-            .then((data) => setCityDetails(data));
-        return () => {}
-    }, [cityKey]);
-
+function CityExpansion({ cityKey, favCities, toggleFavCity }) {
     return (
         <section className="city-expanded">
-            {cityDetails && cityDetails.WeatherText}
+            <CurrentWeather cityKey={cityKey} />
+            <FavToggle cityKey={cityKey} favCities={favCities} toggleFavCity={(cityKey) => toggleFavCity(cityKey)}/>
+            <FiveDayForecast cityKey={cityKey} />
         </section>
     )
 }

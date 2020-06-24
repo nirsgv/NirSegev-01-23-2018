@@ -7,14 +7,14 @@ import Search from "./components/search";
 import SearchSuggestions from "./components/searchSuggestions";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
-import { setSearchValue, setDisplayedCity } from "./actions";
+import { setSearchValue, setDisplayedCity, toggleFavCity } from "./actions";
 
 import { createBrowserHistory } from "history";
 import CityExpansion from "./components/cityExpansion";
 const customHistory = createBrowserHistory();
 
 
-function App({ isDarkMode, searchVal, setSearchValue, mainCityDisplayKey, setDisplayedCity }) {
+function App({ isDarkMode, searchVal, setSearchValue, mainCityDisplayKey, setDisplayedCity, favCities, toggleFavCity }) {
     const navlinkProps = {
         className: "main-nav__link",
         activeClassName: "main-nav__link--active"
@@ -36,9 +36,9 @@ function App({ isDarkMode, searchVal, setSearchValue, mainCityDisplayKey, setDis
                     <Switch>
                         <Route path="/weather">
                             <h1>A</h1>
-                            <Search searchVal={searchVal} setSearchValue={setSearchValue}/>
-                            <SearchSuggestions searchVal={searchVal} setDisplayedCity={setDisplayedCity}/>
-                            <CityExpansion cityKey={mainCityDisplayKey}/>
+                            <Search searchVal={searchVal} setSearchValue={setSearchValue} />
+                            <SearchSuggestions searchVal={searchVal} setDisplayedCity={setDisplayedCity} />
+                            <CityExpansion cityKey={mainCityDisplayKey} favCities={favCities} toggleFavCity={toggleFavCity}/>
 
 
                         </Route>
@@ -58,11 +58,13 @@ const mapStateToProps = state => ({
     isDarkMode: state.appData.isDarkMode,
     searchVal: state.appData.searchVal,
     mainCityDisplayKey: state.appData.mainCityDisplayKey,
+    favCities: state.appData.favCities,
 });
 
 const mapDispatchToProps = dispatch => bindActionCreators({
     setSearchValue,
-    setDisplayedCity
+    setDisplayedCity,
+    toggleFavCity
 }, dispatch);
 
 

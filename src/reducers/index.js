@@ -1,17 +1,35 @@
 import { combineReducers } from 'redux';
+export const TOGGLE_FAV_CITY = 'TOGGLE_FAV_CITY';
 export const TOGGLE_DARK_MODE = 'TOGGLE_DARK_MODE';
 export const SET_SEARCH_VALUE = 'SET_SEARCH_VALUE';
 export const SET_DISPLAYED_CITY = 'SET_DISPLAYED_CITY';
 
 
+const checkLocal = () => {
+    const localData = localStorage.getItem("weather-spa");
+    return localData ? JSON.parse(localData).data : []
+};
+
 const initialAppState = {
     isDarkMode: false,
-    searchVal: 'Tel-aviv',
-    mainCityDisplayKey: 223
+    searchVal: '',
+    mainCityDisplayKey: null,
+    favCities: checkLocal()
 };
 
 function appData(state = initialAppState, action) {
     switch (action.type) {
+
+        case TOGGLE_FAV_CITY:
+            const currentFav = state.favCities.includes(action.payload)
+                ? state.favCities.filter(item => item !== action.payload)
+                : action.payload
+                    ? state.favCities.concat(action.payload)
+                    : state.favCities;
+            return {
+                ...state,
+                favCities: currentFav
+            };
 
         case TOGGLE_DARK_MODE:
             return {
