@@ -6,7 +6,7 @@ import {getAverage, getCity, getCurrentConditions} from "../helpers";
 
 function CurrentWeather({ cityKey }) {
 
-    const [ cityWeather, setCityWeather ] = useState(123);
+    const [ cityWeather, setCityWeather ] = useState({});
     const [ cityName, setCityName ] = useState('');
 
     useEffect(() => {

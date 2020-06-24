@@ -7,7 +7,7 @@ export const SET_DISPLAYED_CITY = 'SET_DISPLAYED_CITY';
 
 const checkLocal = () => {
     const localData = localStorage.getItem("weather-spa");
-    return localData ? JSON.parse(localData).data : []
+    return localData ? JSON.parse(localData) : []
 };
 
 const initialAppState = {

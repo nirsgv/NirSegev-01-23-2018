@@ -1,23 +1,29 @@
 .main-nav {
 
     &__wrap {
-        flex-grow: 1;
+        //flex-grow: 1;
     }
 
     &__list {
         display: flex;
-        flex-grow: 1;
-        margin-right: auto;
+        //flex-grow: 1;
+        //margin-right: auto;
+        //height: 100%;
     }
 
     &__item {
-
+        &:not(:last-child) {
+            margin-right: 1rem;
+        }
     }
 
     &__link {
 
+        color: #888;
+        text-decoration: none;
+
         &--active {
-            color: white;
+            color: #333;
         }
     }
 

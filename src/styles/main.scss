@@ -1,5 +1,6 @@
 @import 'mixins.scss';
 @import 'reset.scss';
+@import 'blocks/_header.scss';
 @import 'blocks/_main-nav.scss';
 
 
@@ -16,4 +17,10 @@ svg {
     text-align: center;
     vertical-align: middle;
     box-sizing: content-box;
+}
+
+%center-ver {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
