@@ -7,11 +7,14 @@ const isLiked = (cityKey, favCities) => favCities.includes(cityKey);
 
 function FavToggle({ cityKey, favCities = [], toggleFavCity }) {
 
+    const liked = isLiked(cityKey, favCities);
+
     return (
         <>
-            <button className={`fav-toggle-btn ${isLiked(cityKey, favCities) ? 'active' : ''}`} onClick={() => toggleFavCity(cityKey, favCities)}>
+            <button className={`fav-toggle-btn ${liked ? 'active' : ''}`} onClick={() => toggleFavCity(cityKey, favCities)}>
                 <SvgSprite name={'HEART'}/>
-                <span className={'fav-toggle-btn__text'}>{`${isLiked(cityKey, favCities) ? 'Remove From' : 'Add To'}`} Favorites</span>
+                {/*<span className={'fav-toggle-btn__text'}>{`${liked ? 'Remove From' : 'Add To'}`} Favorites</span>*/}
+                <span className={'fav-toggle-btn__text'}>{`${liked ? 'Remove' : 'Add'}`}</span>
             </button>
         </>
     )

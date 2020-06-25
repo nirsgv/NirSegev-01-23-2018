@@ -1,5 +1,6 @@
 import { combineReducers } from 'redux';
 export const TOGGLE_FAV_CITY = 'TOGGLE_FAV_CITY';
+export const TOGGLE_IS_FAHRENHEIT = 'TOGGLE_IS_FAHRENHEIT';
 export const TOGGLE_DARK_MODE = 'TOGGLE_DARK_MODE';
 export const SET_SEARCH_VALUE = 'SET_SEARCH_VALUE';
 export const SET_DISPLAYED_CITY = 'SET_DISPLAYED_CITY';
@@ -14,23 +15,31 @@ const initialAppState = {
     isDarkMode: false,
     isFahrenheit: false,
     searchVal: '',
-    mainCityDisplayKey: null,
+    // mainCityDisplayKey: 1162619,
+    mainCityDisplayKey: 215854,
     favCities: checkLocal(),
 };
 
 function appData(state = initialAppState, action) {
     switch (action.type) {
 
-        case TOGGLE_FAV_CITY:
+
+        case TOGGLE_IS_FAHRENHEIT:
             return {
                 ...state,
-                favCities: action.payload
+                isFahrenheit: !state.isFahrenheit
             };
 
         case TOGGLE_DARK_MODE:
             return {
                 ...state,
                 isDarkMode: !state.isDarkMode
+            };
+
+        case TOGGLE_FAV_CITY:
+            return {
+                ...state,
+                favCities: action.payload
             };
 
         case SET_SEARCH_VALUE:

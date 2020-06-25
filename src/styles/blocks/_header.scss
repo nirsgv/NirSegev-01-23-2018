@@ -11,10 +11,11 @@
 
     &__main-nav{
         flex-basis: 10rem;
+        flex-grow: 1;
+
     }
 
     &__controls{
-        flex-grow: 1;
     }
     
     &__logo, &__main-nav, &__controls {

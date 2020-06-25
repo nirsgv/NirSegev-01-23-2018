@@ -1,3 +1,4 @@
+import { TOGGLE_IS_FAHRENHEIT } from '../reducers';
 import { TOGGLE_DARK_MODE } from '../reducers';
 import { SET_SEARCH_VALUE } from '../reducers';
 import { SET_DISPLAYED_CITY } from '../reducers';
@@ -21,10 +22,16 @@ function toggleFavCity(cityKey, favCities) {
     return action;
 }
 
-function toggleDarkMode(e) {
+function toggleIsFahrenheit() {
+    const action = {
+        type: TOGGLE_IS_FAHRENHEIT,
+    };
+    return action;
+}
+
+function toggleDarkMode() {
     const action = {
         type: TOGGLE_DARK_MODE,
-        payload: e.target.name
     };
     return action;
 }
@@ -50,6 +57,7 @@ function setDisplayedCity(val) {
 export  {
     toggleFavCity,
     toggleDarkMode,
+    toggleIsFahrenheit,
     setSearchValue,
     setDisplayedCity
 }

@@ -29,13 +29,13 @@ function CurrentWeather({ cityKey }) {
 
 
     return (
-        <div>
+        <>
             <div className="city-name">{cityName}</div>
             <RasterSprite className="icon" iconNum={cityWeather.weatherIcon}/>
             <div className="text">{cityWeather.weatherText}</div>
             {/*<div className="temp">{cityWeather.temp && cityWeather.temp.Maximum && getAverage(cityWeather.temp.Maximum.Value, cityWeather.temp.Minimum.Value)}</div>*/}
             <div className="temp">{cityWeather.temp && cityWeather.temp.Imperial.Value}</div>
-        </div>
+        </>
     )
 }
 

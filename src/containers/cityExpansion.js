@@ -13,7 +13,7 @@ function CityExpansion({ cityKey, favCities, toggleFavCity }) {
         <section className="city-detail">
             <div className="city-detail__stats">
                 <CurrentWeather cityKey={cityKey} />
-                <FavToggle cityKey={cityKey} favCities={favCities} toggleFavCity={(cityKey, favCities) => toggleFavCity(cityKey, favCities)}/>
+                <FavToggle cityKey={cityKey} favCities={favCities} toggleFavCity={toggleFavCity}/>
             </div>
             <FiveDayForecast cityKey={cityKey} baseClassName={'forecast'} />
         </section>
