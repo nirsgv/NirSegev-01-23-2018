@@ -5,7 +5,7 @@ import { bindActionCreators } from "redux";
 import CurrentWeather from "../components/currentWeather";
 import List from "../components/list";
 import FavToggle from "../components/favToggle";
-import { Router, Switch, Route, Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 function Favorites({ favCities, isFahrenheit }) {
@@ -13,7 +13,7 @@ function Favorites({ favCities, isFahrenheit }) {
     return (
         <List baseClassName={'favorites'}>
             {favCities.map((item, index) => <span key={index}>
-                <Link to={`weather/${item}`} className={`track__text-wrap`}>
+                <Link to={`weather/${item}`} className={''}>
                      <FavToggle cityKey={item} favCities={favCities} toggleFavCity={toggleFavCity} />
                     {/*<button onClick={toggleFavCity}*/}
                     <CurrentWeather cityKey={item} isFahrenheit={isFahrenheit} />

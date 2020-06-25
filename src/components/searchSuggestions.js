@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { autoComplete } from '../helpers';
 import List from "./list";
+import { Link } from "react-router-dom";
 
 const exampleRes = [
     {
@@ -68,9 +69,10 @@ const exampleRes = [
 function Suggestion({index, item, setDisplayedCity}) {
     const { city, country, cityKey } = item;
     return (
-            <button key={index} onClick={() => setDisplayedCity(cityKey)}>
-                <h2>{`${city}, ${country}`}</h2>
-            </button>
+        <Link to={`/weather/${cityKey}`} className={''}>
+            <h2>{`${city}, ${country}`}</h2>
+        </Link>
+
     )
 }
 

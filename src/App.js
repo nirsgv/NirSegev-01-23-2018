@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import './styles/main.scss';
 
-import { Router, Switch, Route, Link, NavLink } from "react-router-dom";
+import {Router, Switch, Route, Link, NavLink, Redirect} from "react-router-dom";
 import { toggleDarkMode, toggleIsFahrenheit } from './actions'
 import List from "./components/list";
 import Favorites from "./containers/favorites";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
-import { createBrowserHistory } from "history";
 import CityExpansion from "./containers/cityExpansion";
 import Checkbox from "./components/checkbox";
+import { createBrowserHistory } from "history";
 const customHistory = createBrowserHistory();
 
 
@@ -23,9 +23,13 @@ function App({ toggleDarkMode, toggleIsFahrenheit, isDarkMode, isFahrenheit }) {
             <Router history={customHistory}>
 
                 <header className="header">
-                    <div className="header__logo">logo</div>
+                    <Link to="/">
+                        <div className="header__logo">logo</div>
+                    </Link>
+
+
                     <List baseClassName="main-nav" addClass={"header__main-nav"}>
-                        <NavLink {...navlinkProps} to="/weather">Weather</NavLink>
+                        <NavLink {...navlinkProps} to="/">Weather</NavLink>
                         <NavLink {...navlinkProps} to="/favorites">Favorites</NavLink>
                     </List>
                     <List baseClassName="checkbox-toggle" addClass={"header__controls"}>
@@ -48,10 +52,9 @@ function App({ toggleDarkMode, toggleIsFahrenheit, isDarkMode, isFahrenheit }) {
 
                 <main>
                     <Switch>
-                        {/*<Route path="/weather">*/}
-                            {/*<Search />*/}
-                            {/*<CityExpansion />*/}
-                        {/*</Route>*/}
+                        <Route exact path="/">
+                            <Redirect to="/weather/215854" /> :
+                        </Route>
                         <Route path="/weather/:id" component={CityExpansion} />
                         <Route path="/favorites" component={Favorites} />
 
