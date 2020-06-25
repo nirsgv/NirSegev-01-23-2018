@@ -12,11 +12,14 @@
     }
 
     &__item {
-        outline: 1px solid #ddd;
+        border: 1px solid #eee;
         display: flex;
         flex-direction: column;
         justify-content: center;
         height: 16rem;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0px 2px 0px #33333333;
     }
 
     &__title {

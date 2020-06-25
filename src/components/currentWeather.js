@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import {getAverage, getCity, getCurrentConditions} from "../helpers";
+import { getCity, getCurrentConditions, getType } from "../helpers";
 import RasterSprite from "./rasterSprite";
 
 
@@ -37,7 +37,7 @@ function CurrentWeather({ cityKey, isFahrenheit }) {
             <div className="city-details">
                 <div className="city-name">{`${cityName}, ${countryName}`}</div>
                 <div className="text">{cityWeather.weatherText}</div>
-                <div className="temp">{`${cityWeather.temp && cityWeather.temp[degreeType].Value}${isFahrenheit ? '°F' : '°C'}`}</div>
+                <div className="temp">{`${cityWeather.temp && cityWeather.temp[degreeType].Value}${getType(isFahrenheit)}`}</div>
             </div>
             {/*<div className="temp">{cityWeather.temp && cityWeather.temp.Maximum && getAverage(cityWeather.temp.Maximum.Value, cityWeather.temp.Minimum.Value)}</div>*/}
         </>

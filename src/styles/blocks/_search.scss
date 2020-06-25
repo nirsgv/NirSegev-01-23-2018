@@ -16,13 +16,6 @@
 
     &__wrap {
         flex-grow: 1;
-        //@media(hover: hover) and (pointer: fine) and (min-width: map-get($b-points, "mob")) {
-        //
-        //    &:hover .main-search__icon{
-        //        color: #888;
-        //    }
-        //}
-
     }
 
     &__icon {
@@ -38,5 +31,10 @@
         background-color: transparent;
         padding-left: 1rem;
         width: 100%;
+    }
+
+    & > span {
+        font-size: .8rem;
+        color: #ccc;
     }
 }

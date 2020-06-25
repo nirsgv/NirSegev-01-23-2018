@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { getFiveDayForecast, getAverage } from "../helpers";
+import { getFiveDayForecast, getAverage, getType } from "../helpers";
 import List from "./list";
 
 function ForecastHeadline({ category, content }) {
@@ -13,7 +13,7 @@ function ForecastHeadline({ category, content }) {
     )
 }
 
-function DailyForecast({ day, baseClassName }) {
+function DailyForecast({ day, baseClassName, isFahrenheit }) {
     const { date, temp } = day,
           { Maximum, Minimum } = temp,
           dayTitle = new Date(date).toDateString().split(' ')[0],
@@ -22,7 +22,8 @@ function DailyForecast({ day, baseClassName }) {
     return (
         <>
             <div className={`${baseClassName}__title`}>{dayTitle}</div>
-            <div className={`${baseClassName}__degree-num`}>{`${tempAverage} ${Maximum.Unit}`}</div>
+            <div className={`${baseClassName}__degree-num`}>{`${tempAverage} ${getType(isFahrenheit)}`}</div>
+            {/*<div className={`${baseClassName}__degree-num`}>{`${Minimum.Value} - ${Maximum.Value}`}</div>*/}
         </>
     )
 }
@@ -53,7 +54,7 @@ function FiveDayForecast({ cityKey, baseClassName, isFahrenheit }) {
                 && <ForecastHeadline category={headline.category} content={headline.content} />
             }
             <List baseClassName={baseClassName}>
-                {forecast && forecast.map((item, index) => <DailyForecast day={item} key={index} baseClassName={baseClassName}/>)}
+                {forecast && forecast.map((item, index) => <DailyForecast day={item} key={index} baseClassName={baseClassName} isFahrenheit={isFahrenheit}/>)}
             </List>
         </>
     )

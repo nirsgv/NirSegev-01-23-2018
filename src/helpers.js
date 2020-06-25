@@ -46,6 +46,8 @@ const autoComplete = async (city) => {
 
 const getAverage = (numA, numB) => Math.floor((Number(numA) + Number(numB)) / 2);
 
+const getType = (isFahrenheit) => isFahrenheit ? '°F' : '°C';
+
 // autoComplete('Stockholm')
 //     .then(data => console.log(data))
 //     .catch(err => console.log(err));
@@ -55,5 +57,6 @@ export {
     autoComplete,
     getCurrentConditions,
     getFiveDayForecast,
-    getAverage
+    getAverage,
+    getType
 }
