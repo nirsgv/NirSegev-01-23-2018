@@ -24,9 +24,9 @@ const getCurrentConditions = async (cityKey) => {
     return data[0];
 };
 
-const getFiveDayForecast = async (cityKey) => {
+const getFiveDayForecast = async (cityKey, isFahrenheit) => {
     const base = `http://dataservice.accuweather.com/forecasts/v1/daily/5day/${cityKey}`;
-    const query = `?apikey=${key}`;
+    const query = `?metric=${!isFahrenheit}&apikey=${key}`;
 
     const response = await fetch (base + query);
     const data = await response.json();

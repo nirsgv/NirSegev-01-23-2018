@@ -27,13 +27,13 @@ function DailyForecast({ day, baseClassName }) {
     )
 }
 
-function FiveDayForecast({ cityKey, baseClassName }) {
+function FiveDayForecast({ cityKey, baseClassName, isFahrenheit }) {
 
     const [ forecast, setForecast ] = useState(null);
     const [ headline, setHeadline ] = useState({});
 
     useEffect(() => {
-        cityKey && getFiveDayForecast(cityKey)
+        cityKey && getFiveDayForecast(cityKey, isFahrenheit)
             .then(data => {setHeadline(Object.assign({}, {
                 category: data.Headline.Category,
                 content: data.Headline.Text
@@ -44,7 +44,7 @@ function FiveDayForecast({ cityKey, baseClassName }) {
             })))
             .then((data) => setForecast(data));
         return () => {}
-    }, [cityKey]);
+    }, [cityKey, isFahrenheit]);
 
     return (
         <>
