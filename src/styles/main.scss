@@ -9,6 +9,7 @@
 @import 'blocks/_fav-toggle-btn.scss';
 @import 'blocks/_city-detail.scss';
 @import 'blocks/_checkbox.scss';
+@import 'blocks/_suggestion.scss';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
 
 
@@ -70,4 +71,17 @@ label, button {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+span.die {
+    animation-name: die;
+    animation-duration: .75s;
+    animation-timing-function: ease-out;
+}
+.faded-in-from-bottom {
+}
+
+@keyframes die {
+    from {opacity: 1; }
+    to {opacity: 0;}
 }

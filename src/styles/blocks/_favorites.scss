@@ -16,12 +16,25 @@
     &__item {
         border: 1px solid #eee;
         border-radius: 10px;
-        padding: 3rem;
+        padding: 2rem 1rem 1rem;
         box-shadow: 1px 3px 2px #88888833;
 
         & > div {
             text-align: center;
         }
+    }
+
+    &__remove-btn {
+        font-size: 1rem;
+        text-decoration: none;
+        border-bottom: 1px solid #888;
+        padding: 0 0 0.8rem 0;
+
+        &-wrap {
+            width: 100%;
+            text-align: center;
+        }
+
     }
 
 }

@@ -10,11 +10,15 @@ import SvgSprite from "../components/svgSprite";
 function Search({ searchVal, setSearchValue, setDisplayedCity }) {
 
     return (
+        <>
         <section className={'search'}>
             <SvgSprite name={'SEARCH'}/>
             <SearchInput className={'search__input'} searchVal={searchVal} setSearchValue={setSearchValue} />
-            <SearchSuggestions className={'suggestions'} searchVal={searchVal} setDisplayedCity={setDisplayedCity} />
         </section>
+        <section className={'search'}>
+        <SearchSuggestions className={'suggestions'} searchVal={searchVal} setDisplayedCity={setDisplayedCity} />
+        </section>
+        </>
     )
 }
 

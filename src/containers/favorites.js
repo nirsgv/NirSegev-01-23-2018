@@ -8,16 +8,21 @@ import FavToggle from "../components/favToggle";
 import { Link } from "react-router-dom";
 
 
-function Favorites({ favCities, isFahrenheit }) {
+function Favorites({ favCities, isFahrenheit, toggleFavCity }) {
+
+    const st = (item, favCities) => setTimeout(()=>toggleFavCity(item, favCities),1000);
+    const [ dieClass, setDieClass ] = useState('');
 
     return (
         <List baseClassName={'favorites'}>
-            {favCities.map((item, index) => <span key={index}>
+            {favCities.map((item, index) => <span key={index} className={dieClass} onAnimationEnd={() => {setDieClass('');toggleFavCity(item, favCities)}}>
+
                 <Link to={`weather/${item}`} className={''}>
-                     <FavToggle cityKey={item} favCities={favCities} toggleFavCity={toggleFavCity} />
-                    {/*<button onClick={toggleFavCity}*/}
                     <CurrentWeather cityKey={item} isFahrenheit={isFahrenheit} />
                 </Link>
+                <div className="favorites__remove-btn-wrap">
+                    <button className={'favorites__remove-btn'} onClick={()=>toggleFavCity(item, favCities)}>Remove</button>
+                </div>
 
             </span>)}
         </List>
