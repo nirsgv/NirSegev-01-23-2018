@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1e4b775f-1fec-41fd-ad58-4ef869370ea4" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/checkbox.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/styles/blocks/_checkbox.scss" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change beforePath="$PROJECT_DIR$/src/actions/index.js" afterPath="$PROJECT_DIR$/src/actions/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/assets/sprite.svg" afterPath="$PROJECT_DIR$/src/assets/sprite.svg" />
-      <change beforePath="$PROJECT_DIR$/src/components/currentWeather.js" afterPath="$PROJECT_DIR$/src/components/currentWeather.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/favToggle.js" afterPath="$PROJECT_DIR$/src/components/favToggle.js" />
-      <change beforePath="$PROJECT_DIR$/src/containers/cityExpansion.js" afterPath="$PROJECT_DIR$/src/containers/cityExpansion.js" />
-      <change beforePath="$PROJECT_DIR$/src/containers/favorites.js" afterPath="$PROJECT_DIR$/src/containers/favorites.js" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/index.js" afterPath="$PROJECT_DIR$/src/reducers/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/styles/blocks/_favorites.scss" afterPath="$PROJECT_DIR$/src/styles/blocks/_favorites.scss" />
-      <change beforePath="$PROJECT_DIR$/src/styles/blocks/_header.scss" afterPath="$PROJECT_DIR$/src/styles/blocks/_header.scss" />
-      <change beforePath="$PROJECT_DIR$/src/styles/main.scss" afterPath="$PROJECT_DIR$/src/styles/main.scss" />
-    </list>
+    <list default="true" id="1e4b775f-1fec-41fd-ad58-4ef869370ea4" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -33,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/favToggle.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="378">
-              <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+              <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -43,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/src/styles/blocks/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="322">
-              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -75,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/checkbox.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="345">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -104,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/currentWeather.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="644">
-              <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+              <caret line="31" column="10" lean-forward="false" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -355,12 +340,12 @@
       <workItem from="1592994642169" duration="834000" />
       <workItem from="1592995550183" duration="13421000" />
       <workItem from="1593067085313" duration="2991000" />
-      <workItem from="1593074464767" duration="1319000" />
+      <workItem from="1593074464767" duration="1673000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55048000" />
+    <option name="totallyTimeSpent" value="55402000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -422,7 +407,7 @@
         <state relative-caret-position="230">
           <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -483,7 +468,7 @@
         <state relative-caret-position="161">
           <caret line="11" column="45" lean-forward="false" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="45" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -708,7 +693,7 @@
         <state relative-caret-position="138">
           <caret line="12" column="42" lean-forward="true" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
           <folding>
-            <element signature="e#0#40#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -734,7 +719,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/currentWeather.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
-          <caret line="31" column="10" lean-forward="true" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
+          <caret line="31" column="10" lean-forward="false" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="10" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
@@ -749,7 +734,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/favToggle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
-          <caret line="22" column="26" lean-forward="true" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <caret line="22" column="26" lean-forward="false" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -757,7 +742,7 @@
     <entry file="file://$PROJECT_DIR$/src/styles/blocks/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -775,7 +760,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/checkbox.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
