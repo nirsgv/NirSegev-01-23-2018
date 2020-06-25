@@ -5,11 +5,12 @@ import RasterSprite from "./rasterSprite";
 
 
 
-function CurrentWeather({ cityKey }) {
+function CurrentWeather({ cityKey, isFahrenheit }) {
 
-    const [ cityWeather, setCityWeather ] = useState({});
-    const [ cityName, setCityName ] = useState('');
-    const [ countryName, setCountryName ] = useState('');
+    const [ cityWeather, setCityWeather ] = useState({}),
+          [ cityName, setCityName ] = useState(''),
+          [ countryName, setCountryName ] = useState(''),
+          degreeType = isFahrenheit ? 'Imperial' : 'Metric';
 
     useEffect(() => {
         cityKey && getCurrentConditions(cityKey)
@@ -18,7 +19,7 @@ function CurrentWeather({ cityKey }) {
                 weatherText: data.WeatherText,
                 temp: data.Temperature
             }))
-            .then(data => setCityWeather(data));
+            .then(data => {setCityWeather(data);console.log(data)});
 
         cityKey && getCity(cityKey)
             .then(data => {
@@ -36,7 +37,7 @@ function CurrentWeather({ cityKey }) {
             <div className="city-details">
                 <div className="city-name">{`${cityName}, ${countryName}`}</div>
                 <div className="text">{cityWeather.weatherText}</div>
-                <div className="temp">{cityWeather.temp && cityWeather.temp.Imperial.Value}</div>
+                <div className="temp">{`${cityWeather.temp && cityWeather.temp[degreeType].Value}${isFahrenheit ? '°F' : '°C'}`}</div>
             </div>
             {/*<div className="temp">{cityWeather.temp && cityWeather.temp.Maximum && getAverage(cityWeather.temp.Maximum.Value, cityWeather.temp.Minimum.Value)}</div>*/}
         </>

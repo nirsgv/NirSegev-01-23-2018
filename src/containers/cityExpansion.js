@@ -8,11 +8,11 @@ import { toggleFavCity } from "../actions";
 import { connect } from "react-redux";
 
 
-function CityExpansion({ cityKey, favCities, toggleFavCity }) {
+function CityExpansion({ cityKey, favCities, toggleFavCity, isFahrenheit }) {
     return (
         <section className="city-detail">
             <div className="city-detail__stats">
-                <CurrentWeather cityKey={cityKey} />
+                <CurrentWeather cityKey={cityKey} isFahrenheit={isFahrenheit}/>
                 <FavToggle cityKey={cityKey} favCities={favCities} toggleFavCity={toggleFavCity}/>
             </div>
             <FiveDayForecast cityKey={cityKey} baseClassName={'forecast'} />
@@ -33,7 +33,7 @@ CityExpansion.propTypes = {
 const mapStateToProps = state => ({
     cityKey: state.appData.mainCityDisplayKey,
     favCities: state.appData.favCities,
-
+    isFahrenheit: state.appData.isFahrenheit,
 });
 
 const mapDispatchToProps = dispatch => bindActionCreators({
