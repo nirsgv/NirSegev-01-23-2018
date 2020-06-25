@@ -3,7 +3,15 @@ import PropTypes from 'prop-types';
 import { getFiveDayForecast, getAverage } from "../helpers";
 import List from "./list";
 
+function ForecastHeadline({ category, content }) {
 
+    return (
+        <div className='forecast-headline'>
+            <h1 className='forecast-headline__category'>{category}</h1>
+            <h2 className='forecast-headline__content'>{content}</h2>
+        </div>
+    )
+}
 
 function DailyForecast({ day, baseClassName }) {
     const { date, temp } = day,
@@ -22,10 +30,14 @@ function DailyForecast({ day, baseClassName }) {
 function FiveDayForecast({ cityKey, baseClassName }) {
 
     const [ forecast, setForecast ] = useState(null);
+    const [ headline, setHeadline ] = useState({});
 
     useEffect(() => {
         cityKey && getFiveDayForecast(cityKey)
-            .then(data => {console.log(data);return data;})
+            .then(data => {setHeadline(Object.assign({}, {
+                category: data.Headline.Category,
+                content: data.Headline.Text
+            })); console.log(data);return data})
             .then((data) => data.DailyForecasts.map(item => Object.assign({}, {
                 temp: item.Temperature,
                 date: item.Date
@@ -35,10 +47,15 @@ function FiveDayForecast({ cityKey, baseClassName }) {
     }, [cityKey]);
 
     return (
-
-        <List baseClassName={baseClassName}>
-            {forecast && forecast.map((item, index) => <DailyForecast day={item} key={index} baseClassName={baseClassName}/>)}
-        </List>
+        <>
+            {
+                headline
+                && <ForecastHeadline category={headline.category} content={headline.content} />
+            }
+            <List baseClassName={baseClassName}>
+                {forecast && forecast.map((item, index) => <DailyForecast day={item} key={index} baseClassName={baseClassName}/>)}
+            </List>
+        </>
     )
 }
 

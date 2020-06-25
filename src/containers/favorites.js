@@ -11,11 +11,11 @@ function Favorites({ favCities }) {
 
     return (
         <List baseClassName={'favorites'}>
-            {favCities.map(item => <>
+            {favCities.map((item, index) => <span key={index}>
                 <FavToggle cityKey={item} favCities={favCities} toggleFavCity={toggleFavCity} />
                 {/*<button onClick={toggleFavCity}*/}
                 <CurrentWeather cityKey={item} />
-            </>)}
+            </span>)}
         </List>
     );
 }

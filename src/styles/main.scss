@@ -14,12 +14,17 @@
 
 .App {
 
+
+    height: 100vh;
+
     &--bright-mode {
-        background-color: #fff;
+        //background-color: #faa;
+        @include scrimGradient(#faa,#f00);
     }
 
     &--dark-mode {
-        background-color: #333;
+        //background-color: #afa;
+        @include scrimGradient(#333,#000);
     }
 }
 
@@ -29,6 +34,15 @@ body {
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+
+}
+
+main {
+    background-color: #fff;
+    margin: 8rem 4rem 0;
+    padding: 1rem 0rem;
+    border-radius: 8px;
 }
 
 svg {

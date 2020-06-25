@@ -9,10 +9,10 @@ function CurrentWeather({ cityKey }) {
 
     const [ cityWeather, setCityWeather ] = useState({});
     const [ cityName, setCityName ] = useState('');
+    const [ countryName, setCountryName ] = useState('');
 
     useEffect(() => {
         cityKey && getCurrentConditions(cityKey)
-            // .then(data => {console.log(data);return data;})
             .then(data => Object.assign({}, {
                 weatherIcon: data.WeatherIcon,
                 weatherText: data.WeatherText,
@@ -21,8 +21,10 @@ function CurrentWeather({ cityKey }) {
             .then(data => setCityWeather(data));
 
         cityKey && getCity(cityKey)
-            .then(data => {console.log(data);return data;})
-            .then(data => setCityName(data.EnglishName));
+            .then(data => {
+                setCityName(data.EnglishName);
+                setCountryName(data.Country.EnglishName)
+            });
 
         return () => {}
     }, [cityKey]);
@@ -30,11 +32,13 @@ function CurrentWeather({ cityKey }) {
 
     return (
         <>
-            <div className="city-name">{cityName}</div>
             <RasterSprite className="icon" iconNum={cityWeather.weatherIcon}/>
-            <div className="text">{cityWeather.weatherText}</div>
+            <div className="city-details">
+                <div className="city-name">{`${cityName}, ${countryName}`}</div>
+                <div className="text">{cityWeather.weatherText}</div>
+                <div className="temp">{cityWeather.temp && cityWeather.temp.Imperial.Value}</div>
+            </div>
             {/*<div className="temp">{cityWeather.temp && cityWeather.temp.Maximum && getAverage(cityWeather.temp.Maximum.Value, cityWeather.temp.Minimum.Value)}</div>*/}
-            <div className="temp">{cityWeather.temp && cityWeather.temp.Imperial.Value}</div>
         </>
     )
 }

@@ -1,8 +1,9 @@
 .header {
     height: 8rem;
-    border-bottom: 1px solid #333;
+    //border-bottom: 1px solid #333;
     display: flex;
     padding: 0 4rem;
+    background-color: #fff;
 
     &__logo{
         flex-basis: 10rem;
