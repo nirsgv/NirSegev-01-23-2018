@@ -4,7 +4,6 @@ import './styles/main.scss';
 import { Router, Switch, Route, Link, NavLink } from "react-router-dom";
 import { toggleDarkMode, toggleIsFahrenheit } from './actions'
 import List from "./components/list";
-import Search from "./containers/search";
 import Favorites from "./containers/favorites";
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
@@ -49,13 +48,13 @@ function App({ toggleDarkMode, toggleIsFahrenheit, isDarkMode, isFahrenheit }) {
 
                 <main>
                     <Switch>
-                        <Route path="/weather">
-                            <Search />
-                            <CityExpansion />
-                        </Route>
-                        <Route path="/favorites">
-                            <Favorites />
-                        </Route>
+                        {/*<Route path="/weather">*/}
+                            {/*<Search />*/}
+                            {/*<CityExpansion />*/}
+                        {/*</Route>*/}
+                        <Route path="/weather/:id" component={CityExpansion} />
+                        <Route path="/favorites" component={Favorites} />
+
                     </Switch>
                 </main>
             </Router>

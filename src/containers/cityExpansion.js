@@ -3,20 +3,27 @@ import PropTypes from 'prop-types';
 import FiveDayForecast from "../components/fiveDayForecast";
 import CurrentWeather from "../components/currentWeather";
 import FavToggle from "../components/favToggle";
+import Search from "./search";
 import { bindActionCreators } from "redux";
 import { toggleFavCity } from "../actions";
 import { connect } from "react-redux";
 
 
-function CityExpansion({ cityKey, favCities, toggleFavCity, isFahrenheit }) {
+function CityExpansion({ cityKey , favCities, toggleFavCity, isFahrenheit ,match, history}) {
+    console.log(match);
+    console.log(cityKey);
+    const t = match.params.id;
     return (
+        <>
+        <Search />
         <section className="city-detail">
             <div className="city-detail__stats">
-                <CurrentWeather cityKey={cityKey} isFahrenheit={isFahrenheit}/>
-                <FavToggle cityKey={cityKey} favCities={favCities} toggleFavCity={toggleFavCity}/>
+                <CurrentWeather cityKey={t} isFahrenheit={isFahrenheit}/>
+                <FavToggle cityKey={t} favCities={favCities} toggleFavCity={toggleFavCity}/>
             </div>
-            <FiveDayForecast cityKey={cityKey} baseClassName={'forecast'} isFahrenheit={isFahrenheit}/>
+            <FiveDayForecast cityKey={t} baseClassName={'forecast'} isFahrenheit={isFahrenheit}/>
         </section>
+        </>
     )
 }
 
