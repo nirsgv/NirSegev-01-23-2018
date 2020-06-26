@@ -5,7 +5,7 @@
 const key = 'WdmUfUN7JeOlUdxIiVdk8SBtA3JbaNMN';
 
 const getCity = async (cityKey) => {
-    const base = `http://dataservice.accuweather.com/locations/v1/${cityKey}`;
+    const base = `https://dataservice.accuweather.com/locations/v1/${cityKey}`;
     const query = `?apikey=${key}`;
 
     const response = await fetch (base + query);
@@ -15,7 +15,7 @@ const getCity = async (cityKey) => {
 };
 
 const getCurrentConditions = async (cityKey) => {
-    const base = `http://dataservice.accuweather.com/currentconditions/v1/${cityKey}`;
+    const base = `https://dataservice.accuweather.com/currentconditions/v1/${cityKey}`;
     const query = `?apikey=${key}`;
 
     const response = await fetch (base + query);
@@ -25,7 +25,7 @@ const getCurrentConditions = async (cityKey) => {
 };
 
 const getFiveDayForecast = async (cityKey, isFahrenheit) => {
-    const base = `http://dataservice.accuweather.com/forecasts/v1/daily/5day/${cityKey}`;
+    const base = `https://dataservice.accuweather.com/forecasts/v1/daily/5day/${cityKey}`;
     const query = `?metric=${!isFahrenheit}&apikey=${key}`;
 
     const response = await fetch (base + query);
@@ -35,7 +35,7 @@ const getFiveDayForecast = async (cityKey, isFahrenheit) => {
 };
 
 const autoComplete = async (city) => {
-    const base = 'http://dataservice.accuweather.com/locations/v1/cities/search';
+    const base = 'https://dataservice.accuweather.com/locations/v1/cities/search';
     const query = `?apikey=${key}&q=${city}`;
 
     const response = await fetch (base + query);
