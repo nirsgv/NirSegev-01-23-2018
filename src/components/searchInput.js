@@ -8,7 +8,7 @@ function SearchInput({ searchVal, setSearchValue, className }) {
             {/*<label htmlFor="search">Search:</label>*/}
             <input type="text"
                    id="search" value={searchVal}
-                   placeholder="search"
+                   placeholder="Search for location..."
                    className={className}
                    onChange={e => setSearchValue(e.target.value)}
             />

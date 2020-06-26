@@ -66,7 +66,7 @@ const exampleRes = [
     }
 ];
 
-function Suggestion({index, item, setDisplayedCity}) {
+function Suggestion({ index, item }) {
     const { city, country, cityKey } = item;
     return (
         <Link to={`/weather/${cityKey}`} className={''}>
@@ -82,7 +82,6 @@ function SearchSuggestions({ searchVal, setDisplayedCity, className }) {
     const [ completions, setCompletions ] = useState([]);
 
     useEffect(() => {
-
         searchVal && autoComplete(searchVal)
             .then(data => {console.log(data);return data;})
             .then(data => data.map(suggestion => Object.assign({}, {
@@ -97,13 +96,11 @@ function SearchSuggestions({ searchVal, setDisplayedCity, className }) {
         return () => {}
     }, [searchVal]);
 
-    return (
+    return completions && completions.length > 0 ? (
         <List baseClassName={className}>
-            {
-                completions.map((item, index) => <Suggestion item={item} key={index} index={index} setDisplayedCity={setDisplayedCity}/>)
-            }
+            {completions.map((item, index) => <Suggestion item={item} key={index} index={index} setDisplayedCity={setDisplayedCity}/>)}
         </List>
-    )
+    ) : <></>
 }
 
 SearchSuggestions.defaultProps = {

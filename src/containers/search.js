@@ -7,7 +7,7 @@ import { setSearchValue, setDisplayedCity, toggleFavCity } from "../actions";
 import SvgSprite from "../components/svgSprite";
 
 
-function Search({ searchVal, setSearchValue, setDisplayedCity }) {
+function Search({ searchVal, setSearchValue, setDisplayedCity, favCities }) {
 
     return (
         <>
@@ -15,9 +15,11 @@ function Search({ searchVal, setSearchValue, setDisplayedCity }) {
             <SvgSprite name={'SEARCH'}/>
             <SearchInput className={'search__input'} searchVal={searchVal} setSearchValue={setSearchValue} />
         </section>
-        <section className={'search'}>
-        <SearchSuggestions className={'suggestions'} searchVal={searchVal} setDisplayedCity={setDisplayedCity} />
+        {favCities.length &&
+        <section className={'search__suggestions'}>
+            <SearchSuggestions className={'suggestions'} searchVal={searchVal} setDisplayedCity={setDisplayedCity} />
         </section>
+        }
         </>
     )
 }
