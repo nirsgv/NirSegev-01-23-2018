@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e4b775f-1fec-41fd-ad58-4ef869370ea4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/assets/sprite.svg" afterPath="$PROJECT_DIR$/src/assets/sprite.svg" />
       <change beforePath="$PROJECT_DIR$/src/components/currentWeather.js" afterPath="$PROJECT_DIR$/src/components/currentWeather.js" />
-      <change beforePath="$PROJECT_DIR$/src/helpers.js" afterPath="$PROJECT_DIR$/src/helpers.js" />
       <change beforePath="$PROJECT_DIR$/src/styles/blocks/_city-details.scss" afterPath="$PROJECT_DIR$/src/styles/blocks/_city-details.scss" />
-      <change beforePath="$PROJECT_DIR$/src/styles/blocks/_forecast.scss" afterPath="$PROJECT_DIR$/src/styles/blocks/_forecast.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,8 +37,8 @@
       <file leaf-file-name="currentWeather.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/currentWeather.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="339">
-              <caret line="34" column="12" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+            <state relative-caret-position="374">
+              <caret line="36" column="108" lean-forward="false" selection-start-line="36" selection-start-column="108" selection-end-line="36" selection-end-column="108" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -52,8 +49,8 @@
       <file leaf-file-name="_city-details.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/styles/blocks/_city-details.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
-              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+            <state relative-caret-position="512">
+              <caret line="75" column="8" lean-forward="false" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -81,9 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fav-to</find>
-      <find>title</find>
-      <find>Temp</find>
       <find>&lt;Curr</find>
       <find>_degree-num</find>
       <find>foreca</find>
@@ -110,6 +104,9 @@
       <find>Raster</find>
       <find>city-details</find>
       <find>ICE</find>
+      <find>wrap-for-separator</find>
+      <find>setDisplayedCity</find>
+      <find>CurrentWeather</find>
       <find>WINDY</find>
     </findStrings>
     <replaceStrings>
@@ -157,9 +154,9 @@
         <option value="$PROJECT_DIR$/src/styles/blocks/_favorites.scss" />
         <option value="$PROJECT_DIR$/src/components/fiveDayForecast.js" />
         <option value="$PROJECT_DIR$/src/styles/blocks/_forecast.scss" />
-        <option value="$PROJECT_DIR$/src/components/currentWeather.js" />
         <option value="$PROJECT_DIR$/src/assets/sprite.svg" />
         <option value="$PROJECT_DIR$/src/helpers.js" />
+        <option value="$PROJECT_DIR$/src/components/currentWeather.js" />
         <option value="$PROJECT_DIR$/src/styles/blocks/_city-details.scss" />
       </list>
     </option>
@@ -273,12 +270,12 @@
       <workItem from="1592995550183" duration="13421000" />
       <workItem from="1593067085313" duration="2991000" />
       <workItem from="1593074464767" duration="15828000" />
-      <workItem from="1593145537285" duration="11659000" />
+      <workItem from="1593145537285" duration="12716000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81216000" />
+    <option name="totallyTimeSpent" value="82273000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -317,14 +314,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/styles/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="32" lean-forward="true" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/blocks/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -691,16 +680,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/currentWeather.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="34" column="12" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/sprite.svg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -714,10 +693,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/build/static/js/main.4b95615d.chunk.js.map">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="0" column="158" lean-forward="false" selection-start-line="0" selection-start-column="158" selection-end-line="0" selection-end-column="158" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/currentWeather.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="36" column="108" lean-forward="false" selection-start-line="36" selection-start-column="108" selection-end-line="36" selection-end-column="108" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/blocks/_city-details.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="512">
+          <caret line="75" column="8" lean-forward="false" selection-start-line="75" selection-start-column="8" selection-end-line="75" selection-end-column="8" />
           <folding />
         </state>
       </provider>

@@ -34,16 +34,16 @@ function CurrentWeather({ cityKey, isFahrenheit, setDisplayedCity }) {
 
     return (
         <>
-            {/*<RasterSprite className="icon" iconNum={cityWeather.weatherIcon}/>*/}
-            <div className="city-details" onClick={() => setDisplayedCity(cityKey)}>
+            <div className="city-details" onClick={() => setDisplayedCity ? setDisplayedCity(cityKey) : null}>
                 <div className="city-details__weather-icon">
                     <SvgSprite name={weatherIconsMap[cityWeather.weatherIcon]} />
                 </div>
-                <div className="city-details__name">{`${cityName}, ${countryName}`}</div>
-                <div className="city-details__text">{cityWeather.weatherText}</div>
-                <div className="city-details__temp">{`${cityWeather.temp && cityWeather.temp[degreeType].Value}${getType(isFahrenheit)}`}</div>
+                <div className="city-details__aside">
+                    <div className="city-details__name">{`${cityName}, ${countryName}`}</div>
+                    <div className="city-details__text">{cityWeather.weatherText}</div>
+                    <div className="city-details__temp">{`${cityWeather.temp && cityWeather.temp[degreeType].Value}${getType(isFahrenheit)}`}</div>
+                </div>
             </div>
-            {/*<div className="temp">{cityWeather.temp && cityWeather.temp.Maximum && getAverage(cityWeather.temp.Maximum.Value, cityWeather.temp.Minimum.Value)}</div>*/}
         </>
     )
 }
