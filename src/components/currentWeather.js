@@ -35,9 +35,9 @@ function CurrentWeather({ cityKey, isFahrenheit }) {
         <>
             <RasterSprite className="icon" iconNum={cityWeather.weatherIcon}/>
             <div className="city-details">
-                <div className="city-name">{`${cityName}, ${countryName}`}</div>
-                <div className="text">{cityWeather.weatherText}</div>
-                <div className="temp">{`${cityWeather.temp && cityWeather.temp[degreeType].Value}${getType(isFahrenheit)}`}</div>
+                <div className="city-details__name">{`${cityName}, ${countryName}`}</div>
+                <div className="city-details__text">{cityWeather.weatherText}</div>
+                <div className="city-details__temp">{`${cityWeather.temp && cityWeather.temp[degreeType].Value}${getType(isFahrenheit)}`}</div>
             </div>
             {/*<div className="temp">{cityWeather.temp && cityWeather.temp.Maximum && getAverage(cityWeather.temp.Maximum.Value, cityWeather.temp.Minimum.Value)}</div>*/}
         </>
