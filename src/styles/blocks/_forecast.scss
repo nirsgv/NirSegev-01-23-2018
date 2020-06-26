@@ -20,12 +20,13 @@
     &__item {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         height: 16rem;
         border-radius: 10px;
         background-color: #fff;
         border: 1px solid #eee;
         box-shadow: 0px 2px 0px #33333333;
+        padding: 2rem 0;
 
         @media screen and (min-width: 768px) {
             height: 16rem;
@@ -45,7 +46,7 @@
 
         text-decoration: none;
         text-align: center;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
 
     }
 
@@ -71,4 +72,11 @@
     }
 
 
+}
+
+
+//tmptmptmp
+.forecast__degree-num + .forecast__degree-num {
+    font-size: 1.2rem;
+    color: #888;
 }

@@ -23,7 +23,7 @@ function DailyForecast({ day, baseClassName, isFahrenheit }) {
         <>
             <div className={`${baseClassName}__title`}>{dayTitle}</div>
             <div className={`${baseClassName}__degree-num`}>{`${tempAverage} ${getType(isFahrenheit)}`}</div>
-            {/*<div className={`${baseClassName}__degree-num`}>{`${Minimum.Value} - ${Maximum.Value}`}</div>*/}
+            <div className={`${baseClassName}__degree-num`}>{`${Minimum.Value} - ${Maximum.Value}`}</div>
         </>
     )
 }
