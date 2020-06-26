@@ -48,6 +48,55 @@ const getAverage = (numA, numB) => Math.floor((Number(numA) + Number(numB)) / 2)
 
 const getType = (isFahrenheit) => isFahrenheit ? '°F' : '°C';
 
+const weatherIconsMap = {
+    '1':'SUNNY',
+    '2':'MOSTLY_SUNNY',
+    '3':'PARTLY_SUNNY',
+    '4':'INTERMITTENT_CLOUDS',
+    '5':'HAZY_SUNSHINE',
+    '6':'MOSTLY_CLOUDY',
+    '7':'CLOUDY',
+    '8':'HAZY_SUNSHINE',
+    '9':'',
+    '10':'',
+    '11':'OVERCAST',
+    '12':'FOG',
+    '13':'SHOWERS',
+    '14':'MOSTLY_CLOUDY_WITH_SHOWERS',
+    '15':'PARTLY_CLOUDY_WITH_SHOWERS',
+    '16':'THUNDER_STORMS',
+    '17':'MOSTLY_CLOUDY_WITH_THUNDER_STORMS',
+    '18':'PARTLY_CLOUDY_WITH_THUNDER_STORMS',
+    '19':'RAIN',
+    '20':'FLURRIES',
+    '21':'MOSTLY_CLOUDY_WITH_FLURRIES',
+    '22':'SUNNY',
+    '23':'MOSTLY_SUNNY',
+    '24':'ICE',
+    '25':'INTERMITTENT_CLOUDS',
+    '26':'HAZY_SUNSHINE',
+    '27':'MOSTLY_CLOUDY',
+    '28':'CLOUDY',
+    '29':'HAZY_SUNSHINE',
+    '30':'HOT',
+    '31':'COLD',
+    '32':'WINDY',
+    '33':'FOG',
+    '34':'SHOWERS',
+    '35':'MOSTLY_CLOUDY_WITH_SHOWERS',
+    '36':'PARTLY_CLOUDY_WITH_SHOWERS',
+    '37':'THUNDER_STORMS',
+    '38':'MOSTLY_CLOUDY_WITH_THUNDER_STORMS',
+    '39':'PARTLY_CLOUDY_WITH_THUNDER_STORMS',
+    '40':'RAIN',
+    '41':'FLURRIES',
+    '42':'MOSTLY_CLOUDY_WITH_FLURRIES',
+    '43':'PARTLY_CLOUDY_WITH_SHOWERS',
+    '44':'THUNDER_STORMS',
+};
+
+
+
 // autoComplete('Stockholm')
 //     .then(data => console.log(data))
 //     .catch(err => console.log(err));
@@ -58,5 +107,6 @@ export {
     getCurrentConditions,
     getFiveDayForecast,
     getAverage,
-    getType
+    getType,
+    weatherIconsMap
 }

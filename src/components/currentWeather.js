@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { getCity, getCurrentConditions, getType } from "../helpers";
 import RasterSprite from "./rasterSprite";
-
+import { weatherIconsMap } from '../helpers';
+import SvgSprite from "./svgSprite";
 
 
 function CurrentWeather({ cityKey, isFahrenheit, setDisplayedCity }) {
@@ -33,8 +34,11 @@ function CurrentWeather({ cityKey, isFahrenheit, setDisplayedCity }) {
 
     return (
         <>
-            <RasterSprite className="icon" iconNum={cityWeather.weatherIcon}/>
+            {/*<RasterSprite className="icon" iconNum={cityWeather.weatherIcon}/>*/}
             <div className="city-details" onClick={() => setDisplayedCity(cityKey)}>
+                <div className="city-details__weather-icon">
+                    <SvgSprite name={weatherIconsMap[cityWeather.weatherIcon]} />
+                </div>
                 <div className="city-details__name">{`${cityName}, ${countryName}`}</div>
                 <div className="city-details__text">{cityWeather.weatherText}</div>
                 <div className="city-details__temp">{`${cityWeather.temp && cityWeather.temp[degreeType].Value}${getType(isFahrenheit)}`}</div>
