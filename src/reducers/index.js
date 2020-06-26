@@ -16,8 +16,7 @@ const initialAppState = {
     isFahrenheit: false,
     searchVal: '',
     // mainCityDisplayKey: 1162619,
-    // mainCityDisplayKey: 215854,
-    mainCityDisplayKey: '',
+    mainCityDisplayKey: '215854',
     favCities: checkLocal(),
 };
 

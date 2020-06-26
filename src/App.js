@@ -10,10 +10,11 @@ import { connect } from "react-redux";
 import CityExpansion from "./containers/cityExpansion";
 import Checkbox from "./components/checkbox";
 import { createBrowserHistory } from "history";
+import SvgSprite from "./components/svgSprite";
 const customHistory = createBrowserHistory();
 
 
-function App({ toggleDarkMode, toggleIsFahrenheit, isDarkMode, isFahrenheit }) {
+function App({ toggleDarkMode, toggleIsFahrenheit, isDarkMode, isFahrenheit, cityKey }) {
     const navlinkProps = {
         className: "main-nav__link",
         activeClassName: "main-nav__link--active"
@@ -23,13 +24,15 @@ function App({ toggleDarkMode, toggleIsFahrenheit, isDarkMode, isFahrenheit }) {
             <Router history={customHistory}>
 
                 <header className="header">
-                    <Link to="/">
-                        <div className="header__logo">logo</div>
+                    <Link to={`/weather/${cityKey}`}>
+                        <div className="header__logo">
+                            <SvgSprite name='LOGO'/>
+                        </div>
                     </Link>
 
 
                     <List baseClassName="main-nav" addClass={"header__main-nav"}>
-                        <NavLink {...navlinkProps} to="/">Weather</NavLink>
+                        <NavLink {...navlinkProps} to={`/weather/${cityKey}`}>Weather</NavLink>
                         <NavLink {...navlinkProps} to="/favorites">Favorites</NavLink>
                     </List>
                     <List baseClassName="checkbox-toggle" addClass={"header__controls"}>
@@ -53,7 +56,7 @@ function App({ toggleDarkMode, toggleIsFahrenheit, isDarkMode, isFahrenheit }) {
                 <main>
                     <Switch>
                         <Route exact path="/">
-                            <Redirect to="/weather/215854" /> :
+                            <Redirect to={`/weather/${cityKey}`} />
                         </Route>
                         <Route path="/weather/:id" component={CityExpansion} />
                         <Route path="/favorites" component={Favorites} />
@@ -70,6 +73,8 @@ function App({ toggleDarkMode, toggleIsFahrenheit, isDarkMode, isFahrenheit }) {
 const mapStateToProps = state => ({
     isDarkMode: state.appData.isDarkMode,
     isFahrenheit: state.appData.isFahrenheit,
+    cityKey: state.appData.mainCityDisplayKey
+
 });
 
 const mapDispatchToProps = dispatch => bindActionCreators({

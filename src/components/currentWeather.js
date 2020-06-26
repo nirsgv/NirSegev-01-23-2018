@@ -5,7 +5,7 @@ import RasterSprite from "./rasterSprite";
 
 
 
-function CurrentWeather({ cityKey, isFahrenheit }) {
+function CurrentWeather({ cityKey, isFahrenheit, setDisplayedCity }) {
 
     const [ cityWeather, setCityWeather ] = useState({}),
           [ cityName, setCityName ] = useState(''),
@@ -34,7 +34,7 @@ function CurrentWeather({ cityKey, isFahrenheit }) {
     return (
         <>
             <RasterSprite className="icon" iconNum={cityWeather.weatherIcon}/>
-            <div className="city-details">
+            <div className="city-details" onClick={() => setDisplayedCity(cityKey)}>
                 <div className="city-details__name">{`${cityName}, ${countryName}`}</div>
                 <div className="city-details__text">{cityWeather.weatherText}</div>
                 <div className="city-details__temp">{`${cityWeather.temp && cityWeather.temp[degreeType].Value}${getType(isFahrenheit)}`}</div>
