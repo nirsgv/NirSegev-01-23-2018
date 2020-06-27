@@ -2,20 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e4b775f-1fec-41fd-ad58-4ef869370ea4" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/errorHandler.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/assets/raster-weather-icons-sprite.png" afterPath="$PROJECT_DIR$/src/assets/raster-weather-icons-sprite.png" />
-      <change beforePath="$PROJECT_DIR$/src/components/currentWeather.js" afterPath="$PROJECT_DIR$/src/components/currentWeather.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/searchInput.js" afterPath="$PROJECT_DIR$/src/components/searchInput.js" />
-      <change beforePath="$PROJECT_DIR$/src/containers/cityExpansion.js" afterPath="$PROJECT_DIR$/src/containers/cityExpansion.js" />
-      <change beforePath="$PROJECT_DIR$/src/containers/favorites.js" afterPath="$PROJECT_DIR$/src/containers/favorites.js" />
-      <change beforePath="$PROJECT_DIR$/src/containers/search.js" afterPath="$PROJECT_DIR$/src/containers/search.js" />
-      <change beforePath="$PROJECT_DIR$/src/helpers.js" afterPath="$PROJECT_DIR$/src/helpers.js" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/styles/blocks/_city-detail.scss" afterPath="$PROJECT_DIR$/src/styles/blocks/_city-detail.scss" />
-      <change beforePath="$PROJECT_DIR$/src/styles/blocks/_city-details.scss" afterPath="$PROJECT_DIR$/src/styles/blocks/_city-details.scss" />
+      <change beforePath="$PROJECT_DIR$/src/assets/raster-weather-icons-sprite.png" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/styles/main.scss" afterPath="$PROJECT_DIR$/src/styles/main.scss" />
+      <change beforePath="$PROJECT_DIR$/src/styles/raster-weather-icons.scss" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -51,11 +41,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/styles/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="96" column="27" lean-forward="false" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
+            <state relative-caret-position="69">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -107,7 +97,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="favorites.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="favorites.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/containers/favorites.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="518">
@@ -225,11 +215,11 @@
         <option value="$PROJECT_DIR$/src/components/fiveDayForecast.js" />
         <option value="$PROJECT_DIR$/src/containers/cityExpansion.js" />
         <option value="$PROJECT_DIR$/src/styles/blocks/_city-detail.scss" />
-        <option value="$PROJECT_DIR$/src/styles/main.scss" />
         <option value="$PROJECT_DIR$/src/styles/blocks/_city-details.scss" />
         <option value="$PROJECT_DIR$/src/containers/search.js" />
         <option value="$PROJECT_DIR$/src/helpers.js" />
         <option value="$PROJECT_DIR$/src/containers/favorites.js" />
+        <option value="$PROJECT_DIR$/src/styles/main.scss" />
       </list>
     </option>
   </component>
@@ -279,7 +269,19 @@
               <item name="weather-spa" type="b2602c69:ProjectViewProjectNode" />
               <item name="weather-spa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weather-spa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weather-spa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="weather-spa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weather-spa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -349,12 +351,12 @@
       <workItem from="1593067085313" duration="2991000" />
       <workItem from="1593074464767" duration="15828000" />
       <workItem from="1593145537285" duration="19407000" />
-      <workItem from="1593253992380" duration="11636000" />
+      <workItem from="1593253992380" duration="11696000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100600000" />
+    <option name="totallyTimeSpent" value="100660000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -745,14 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="96" column="27" lean-forward="false" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/blocks/_city-details.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -801,6 +795,14 @@
             <element signature="e#0#40#0" expanded="true" />
             <marker date="1593279776000" expanded="true" signature="806:1013" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
