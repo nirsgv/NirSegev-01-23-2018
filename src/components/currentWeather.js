@@ -20,7 +20,8 @@ function CurrentWeather({ cityKey, isFahrenheit, setDisplayedCity }) {
                 weatherText: data.WeatherText,
                 temp: data.Temperature
             }))
-            .then(data => {setCityWeather(data);console.log(data)});
+            .then(data => setCityWeather(data))
+            .catch(e => (alert(e)));
 
         cityKey && getCity(cityKey)
             .then(data => {

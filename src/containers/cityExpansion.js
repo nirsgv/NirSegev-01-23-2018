@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
 import FiveDayForecast from "../components/fiveDayForecast";
 import CurrentWeather from "../components/currentWeather";
 import FavToggle from "../components/favToggle";
@@ -7,7 +6,6 @@ import Search from "./search";
 import { bindActionCreators } from "redux";
 import { resetSearch, toggleFavCity } from "../actions";
 import { connect } from "react-redux";
-import {autoComplete} from "../helpers";
 
 
 function CityExpansion({ cityKey , favCities, toggleFavCity, isFahrenheit , match, resetSearch }) {
@@ -15,7 +13,7 @@ function CityExpansion({ cityKey , favCities, toggleFavCity, isFahrenheit , matc
     const paramKey = match.params.id;
 
     useEffect(() => {
-        resetSearch()
+        resetSearch();
 
         return () => {}
     }, [cityKey]);
@@ -33,15 +31,6 @@ function CityExpansion({ cityKey , favCities, toggleFavCity, isFahrenheit , matc
         </>
     )
 }
-
-CityExpansion.defaultProps = {
-    baseClassName: 'list',
-};
-
-CityExpansion.propTypes = {
-    baseClassName: PropTypes.string,
-    children: PropTypes.node,
-};
 
 
 const mapStateToProps = state => ({
