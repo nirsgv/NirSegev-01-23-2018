@@ -10,6 +10,7 @@ function SearchInput({ searchVal, setSearchValue, className }) {
                    id="search" value={searchVal}
                    placeholder="Search for location..."
                    className={className}
+                   autocomplete="off"
                    onChange={e => setSearchValue(e.target.value)}
             />
         </>

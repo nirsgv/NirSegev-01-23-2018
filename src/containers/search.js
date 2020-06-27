@@ -13,7 +13,10 @@ function Search({ searchVal, setSearchValue, setDisplayedCity, favCities }) {
         <>
         <section className={'search'}>
             <SvgSprite name={'SEARCH'}/>
-            <SearchInput className={'search__input'} searchVal={searchVal} setSearchValue={setSearchValue} />
+            <SearchInput className={'search__input'}
+                         searchVal={searchVal}
+                         setSearchValue={setSearchValue}
+                         />
         </section>
         {favCities.length &&
         <section className={'search__suggestions'}>
