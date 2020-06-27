@@ -1,18 +1,31 @@
 .header {
     height: 8rem;
-    //border-bottom: 1px solid #333;
     display: flex;
     padding: 0 4rem;
-    background-color: #fff;
+    color: map-deep-get($color, "header-text", "bright");
+    background-color: map-deep-get($color, "header-bkg", "bright");
+    @extend %color-transition;
+    @extend %bkg-color-transition;
+
+    .App--dark-mode & {
+        color: map-deep-get($color, "header-text", "dark");
+        background-color: map-deep-get($color, "header-bkg", "dark");
+    }
 
     &__logo {
         flex-basis: 10rem;
         height: 100%;
         margin-right: 1.8rem;
+        @extend %color-transition;
+
+        color: map-deep-get($color, "logo", "bright");
+
+        .App--dark-mode & {
+            color: map-deep-get($color, "logo", "dark");
+        }
 
         & > span {
             font-size: 1.6rem;
-            color: #6a6a6a;
         }
     }
 

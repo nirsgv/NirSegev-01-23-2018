@@ -1,0 +1,74 @@
+$dark-mode-bkg: #17223b;
+$dark-mode-bkg-2: #263859;
+$dark-mode-highlight: #6b778d;
+$dark-mode-highlight-2: #ff6768;
+
+$color: (
+        'fav-toggle-btn-off': (
+                'bright':  #aaa,
+                'dark':  $dark-mode-bkg-2,
+        ),
+        'fav-toggle-btn-on': (
+                'bright':  #d42223,
+                'dark':  $dark-mode-highlight-2,
+        ),
+        'main-bkg': (
+                'bright':  #fff,
+                'dark':  $dark-mode-bkg,
+        ),
+        'header-bkg': (
+                'bright':  #fff,
+                'dark':  $dark-mode-bkg,
+        ),
+        'header-text': (
+                'bright':  #333,
+                'dark':  $dark-mode-highlight-2,
+        ),
+        'forecast-item-bkg': (
+                'bright':  #fff,
+                'dark':  #333,
+        ),
+        'forecast-item-text': (
+                'bright':  #333,
+                'dark':  #fff,
+        ),
+        'forecast-title': (
+                'bright':  #333,
+                'dark':  $dark-mode-highlight-2,
+        ),
+        'city-details-aside-text': (
+                'bright':  #333,
+                'dark':  #fff,
+        ),
+        'search-input-text': (
+                'bright':  #333,
+                'dark': #fff,
+        ),
+        'logo': (
+                'bright':  #333,
+                'dark': $dark-mode-highlight-2,
+        ),
+        'fav-toggle-btn-text': (
+                'bright':  #333,
+                'dark': $dark-mode-highlight-2,
+        ),
+
+        'btn-text': (
+                'bright':  #333,
+                'dark': $dark-mode-highlight-2,
+        ),
+
+        'main-nav-link': (
+                'bright':  #999,
+                'dark': $dark-mode-highlight,
+        ),
+        'main-nav-link-active': (
+                'bright': #333,
+                'dark':  $dark-mode-highlight-2,
+        ),
+        'weather-icon': (
+                'bright': slategrey,
+                'dark':  $dark-mode-highlight-2,
+        ),
+
+);

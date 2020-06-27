@@ -1,5 +1,6 @@
 @import 'mixins.scss';
 @import 'reset.scss';
+@import 'color.scss';
 @import 'raster-weather-icons.scss';
 @import 'blocks/_header.scss';
 @import 'blocks/_main-nav.scss';
@@ -18,6 +19,7 @@
 
 
     height: 100vh;
+    @extend %bkg-color-transition;
 
     &--bright-mode {
         //background-color: #faa;
@@ -46,6 +48,11 @@ main {
     padding: 1rem 0rem;
     border-radius: 8px;
     box-shadow: 0px 5px 5px #33333311;
+    background-color: map-deep-get($color, "main-bkg", "bright");
+
+    .App--dark-mode & {
+        background-color: map-deep-get($color, "main-bkg", "dark");
+    }
 }
 
 svg {

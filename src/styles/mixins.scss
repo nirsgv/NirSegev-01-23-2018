@@ -42,3 +42,12 @@
     background: linear-gradient(unquote($direction), $stops);
 
 }
+
+
+%color-transition {
+    transition: color 0.15s ease-in;
+}
+
+%bkg-color-transition {
+    transition: background-color 0.05s ease-in-out;
+}

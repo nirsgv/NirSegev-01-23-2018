@@ -25,7 +25,12 @@
 
         & > a {
             text-decoration: none;
-            color: #333;
+            @extend %color-transition;
+            color: map-deep-get($color, "city-details-aside-text", "bright");
+
+            .App--dark-mode & {
+                color: map-deep-get($color, "city-details-aside-text", "dark");
+            }
         }
     }
 

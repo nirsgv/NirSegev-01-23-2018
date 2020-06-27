@@ -1,9 +1,15 @@
 .fav-toggle-btn {
 
-    color: #aaa;
     cursor: pointer;
     margin-left: auto;
     font-size: 1rem;
+    @extend %color-transition;
+    color: map-deep-get($color, "fav-toggle-btn-off", "bright");
+
+    .App--dark-mode & {
+        color: map-deep-get($color, "fav-toggle-btn-off", "dark");
+    }
+
 
     & > .wrap-for-separator {
         display: flex;
@@ -29,17 +35,24 @@
 
 
     &.active {
-        color: red;
+        color: map-deep-get($color, "fav-toggle-btn-on", "bright");
+        .App--dark-mode & {
+            color: map-deep-get($color, "fav-toggle-btn-on", "dark");
+        }
     }
+
     & > span {
         transition: color 0.2s ease-in;
-
     }
 
     &__text {
         font-size: .8rem;
-        color: #333333;
-        margin-top: .4rem
+        margin-top: .4rem;
+
+        color: map-deep-get($color, "fav-toggle-btn-text", "bright");
+        .App--dark-mode & {
+            color: map-deep-get($color, "fav-toggle-btn-text", "dark");
+        }
     }
 
 }

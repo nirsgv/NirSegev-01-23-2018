@@ -18,7 +18,7 @@
         }
 
         .city-detail & {
-
+            font-size: 1.2rem;
         }
     }
     &__text {
@@ -27,6 +27,7 @@
         }
 
         .city-detail & {
+            font-size: 1.2rem;
 
         }
     }
@@ -36,14 +37,19 @@
         }
 
         .city-detail & {
+            font-size: 1.8rem;
 
         }
     }
 
     &__weather-icon {
 
-        color: slategrey;
         position: relative;
+        @extend %color-transition;
+        color: map-deep-get($color, "weather-icon", "bright");
+        .App--dark-mode & {
+            color: map-deep-get($color, "weather-icon", "dark");
+        }
 
         .favorites__wrap & {
             font-size: 1.8rem;
@@ -73,6 +79,12 @@
         display: flex;
         flex-direction: column;
         font-size: 2rem;
+        @extend %color-transition;
+        color: map-deep-get($color, "city-details-aside-text", "bright");
+
+        .App--dark-mode & {
+            color: map-deep-get($color, "city-details-aside-text", "dark");
+        }
 
         .city-detail & {
             text-align: left;

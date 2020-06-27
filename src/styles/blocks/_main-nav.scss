@@ -18,11 +18,17 @@
     &__link {
 
         height: 100%;
-        color: #888;
         text-decoration: none;
+        color: map-deep-get($color, "main-nav-link", "bright");
+        .App--dark-mode & {
+            color: map-deep-get($color, "main-nav-link", "dark");
+        }
 
         &--active {
-            color: #333;
+            color: map-deep-get($color, "main-nav-link-active", "bright");
+            .App--dark-mode & {
+                color: map-deep-get($color, "main-nav-link-active", "dark");
+            }
         }
     }
 

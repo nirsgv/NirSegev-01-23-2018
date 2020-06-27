@@ -30,6 +30,10 @@
         background-color: transparent;
         padding-left: 1rem;
         width: 100%;
+        color: map-deep-get($color, "search-input-text", "bright");
+        .App--dark-mode & {
+            color: map-deep-get($color, "search-input-text", "dark");
+        }
     }
 
     &__suggestions {

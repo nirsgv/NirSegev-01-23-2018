@@ -28,10 +28,6 @@
 
       &:not(:last-child) {
         margin-right: 1.6rem;
-        //
-        //@include respond-to(hover-device) {
-        //    margin-right: 2.6rem;
-        //}
       }
 
       input + span {
@@ -50,14 +46,9 @@ input[type="checkbox"]{
     display: inline-block;
     font-size: .5rem;
     border: 1px solid #eee;
-    padding: 0.2rem;
     color: #888;
-    border-radius: 4px;
-
-
-    //@include respond-to(hover-device) {
-    //  font-size: .8rem;
-    //}
+    border-radius: px;
+    padding: 0.3rem;
 
     & > svg {
       transition: all 0.1s ease-out;
@@ -66,6 +57,11 @@ input[type="checkbox"]{
   &:checked {
     + span > svg {
       opacity: 1;
+      color: map-deep-get($color, "btn-text", "bright");
+
+      .App--dark-mode & {
+        color: map-deep-get($color, "btn-text", "dark");
+      }
     }
   }
   &:not(checked) {

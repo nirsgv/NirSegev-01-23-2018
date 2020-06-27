@@ -23,10 +23,21 @@
         justify-content: space-between;
         height: 16rem;
         border-radius: 10px;
-        background-color: #fff;
         border: 1px solid #eee;
         box-shadow: 0px 2px 0px #33333333;
         padding: 2rem 0;
+        @extend %color-transition;
+        @extend %bkg-color-transition;
+
+        background-color: map-deep-get($color, "forecast-item-bkg", "bright");
+        color: map-deep-get($color, "forecast-item-text", "bright");
+
+        .App--dark-mode & {
+            border: 1px solid #2a2a2a;
+            background-color: map-deep-get($color, "forecast-item-bkg", "dark");
+            color: map-deep-get($color, "forecast-item-text", "dark");
+        }
+
 
         @media screen and (min-width: 768px) {
             height: 16rem;
@@ -39,7 +50,14 @@
         text-align: center;
         font-size: 4rem;
         font-weight: 700;
-        color: #333;
+        @extend %color-transition;
+
+        color: map-deep-get($color, "forecast-title", "bright");
+
+        .App--dark-mode & {
+            color: map-deep-get($color, "forecast-title", "dark");
+        }
+
     }
 
     &__degree-num {
@@ -48,6 +66,11 @@
         text-align: center;
         font-size: 1.6rem;
 
+        & > + .forecast__degree-num {
+            font-size: 1.2rem;
+            color: #888;
+            letter-spacing: 0.2rem;
+        }
     }
 
     &-headline {
@@ -55,12 +78,17 @@
         text-align: center;
         font-size: 3rem;
         padding: 0 0 2rem 0;
+        font-weight: 100;
+        color: map-deep-get($color, "weather-icon", "bright");
+        @extend %color-transition;
+
+        .App--dark-mode & {
+            color: map-deep-get($color, "weather-icon", "dark");
+        }
+
         @media screen and (min-width: 768px) {
             padding: 2rem 0 6rem 0;
         }
-
-        color: #777;
-        font-weight: 100;
 
         &__category{
 
@@ -70,14 +98,4 @@
 
         }
     }
-
-
-}
-
-
-//tmptmptmp
-.forecast__degree-num + .forecast__degree-num {
-    font-size: 1.2rem;
-    color: #888;
-    letter-spacing: 0.2rem;
 }
