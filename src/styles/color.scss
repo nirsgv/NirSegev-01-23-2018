@@ -6,6 +6,7 @@ $bright-mode-bkg: #f4f6ff;
 $bright-mode-bkg-2: #4f8a8b;
 $bright-mode-highlight: #ffcb74;
 $bright-mode-highlight-2: #ea907a;
+$mild-black: #333;
 
 $color: (
         'app-bkg-main': (
@@ -29,40 +30,40 @@ $color: (
                 'dark':  $dark-mode-bkg,
         ),
         'header-text': (
-                'bright':  #333,
+                'bright':  $mild-black,
                 'dark':  $dark-mode-highlight-2,
         ),
         'forecast-item-bkg': (
                 'bright':  $bright-mode-bkg,
-                'dark':  #333,
+                'dark':  $mild-black,
         ),
         'forecast-item-text': (
-                'bright':  #333,
+                'bright':  $mild-black,
                 'dark':  #fff,
         ),
         'forecast-title': (
-                'bright':  #333,
+                'bright':  $mild-black,
                 'dark':  $dark-mode-highlight-2,
         ),
         'city-details-aside-text': (
-                'bright':  #333,
+                'bright':  $mild-black,
                 'dark':  #fff,
         ),
         'search-input-text': (
-                'bright':  #333,
+                'bright':  $mild-black,
                 'dark': #fff,
         ),
         'logo': (
-                'bright':  #333,
+                'bright':  $mild-black,
                 'dark': $dark-mode-highlight-2,
         ),
         'fav-toggle-btn-text': (
-                'bright':  #333,
+                'bright':  $mild-black,
                 'dark': $dark-mode-highlight-2,
         ),
 
         'btn-text': (
-                'bright':  #333,
+                'bright':  $mild-black,
                 'dark': $dark-mode-highlight-2,
         ),
 
@@ -71,7 +72,7 @@ $color: (
                 'dark': $dark-mode-highlight,
         ),
         'main-nav-link-active': (
-                'bright': #333,
+                'bright': $mild-black,
                 'dark':  $dark-mode-highlight-2,
         ),
         'weather-icon': (
@@ -87,7 +88,15 @@ $color: (
                 'dark':  $dark-mode-highlight-2,
         ),
         'back-home-headline': (
-                'bright': #333,
+                'bright': $mild-black,
+                'dark':  $dark-mode-highlight,
+        ),
+        'favorites-add-link': (
+                'bright': $mild-black,
+                'dark':  $dark-mode-highlight-2,
+        ),
+        'favorites-add-headline': (
+                'bright': $mild-black,
                 'dark':  $dark-mode-highlight,
         ),
 

@@ -23,7 +23,9 @@ function Favorites({ favCities, isFahrenheit, toggleFavCity, setDisplayedCity })
                     <button className={'favorites__remove-btn'} onClick={()=>toggleFavCity(item, favCities)}>Remove</button>
                 </div>
 
-            </span>) : 'Add favorite items '}
+                </span>) : <>
+                    <h1 className={'favorites__add-headline'}>Add items</h1>
+                    <Link to={'/'} className={'favorites__add-link'}>Here.</Link></>}
             </List>
         </div>
     );

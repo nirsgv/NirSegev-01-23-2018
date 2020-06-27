@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e4b775f-1fec-41fd-ad58-4ef869370ea4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/App.js" afterPath="$PROJECT_DIR$/src/App.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/miss.js" afterPath="$PROJECT_DIR$/src/components/miss.js" />
-      <change beforePath="$PROJECT_DIR$/src/styles/blocks/_checkbox.scss" afterPath="$PROJECT_DIR$/src/styles/blocks/_checkbox.scss" />
-      <change beforePath="$PROJECT_DIR$/src/styles/blocks/_city-details.scss" afterPath="$PROJECT_DIR$/src/styles/blocks/_city-details.scss" />
-      <change beforePath="$PROJECT_DIR$/src/styles/blocks/_forecast.scss" afterPath="$PROJECT_DIR$/src/styles/blocks/_forecast.scss" />
-      <change beforePath="$PROJECT_DIR$/src/styles/blocks/_main-nav.scss" afterPath="$PROJECT_DIR$/src/styles/blocks/_main-nav.scss" />
-      <change beforePath="$PROJECT_DIR$/src/styles/blocks/_missing-notice.scss" afterPath="$PROJECT_DIR$/src/styles/blocks/_missing-notice.scss" />
-      <change beforePath="$PROJECT_DIR$/src/styles/blocks/_search.scss" afterPath="$PROJECT_DIR$/src/styles/blocks/_search.scss" />
-      <change beforePath="$PROJECT_DIR$/src/styles/blocks/_suggestion.scss" afterPath="$PROJECT_DIR$/src/styles/blocks/_suggestion.scss" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/containers/favorites.js" afterPath="$PROJECT_DIR$/src/containers/favorites.js" />
+      <change beforePath="$PROJECT_DIR$/src/styles/blocks/_favorites.scss" afterPath="$PROJECT_DIR$/src/styles/blocks/_favorites.scss" />
       <change beforePath="$PROJECT_DIR$/src/styles/color.scss" afterPath="$PROJECT_DIR$/src/styles/color.scss" />
+      <change beforePath="$PROJECT_DIR$/src/styles/main.scss" afterPath="$PROJECT_DIR$/src/styles/main.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,16 +20,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/blocks/_header.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="23" lean-forward="true" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_main-nav.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/blocks/_main-nav.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -45,17 +30,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_checkbox.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/blocks/_checkbox.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1105">
-              <caret line="57" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="77" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_city-details.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_city-details.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/blocks/_city-details.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="35">
@@ -101,17 +76,39 @@
         <entry file="file://$PROJECT_DIR$/src/styles/blocks/_missing-notice.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="230">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="14" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="color.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="color.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/styles/color.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="74" column="48" lean-forward="true" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
+            <state relative-caret-position="184">
+              <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="favorites.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/favorites.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="26" column="59" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="59" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_favorites.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/blocks/_favorites.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="369">
+              <caret line="47" column="59" lean-forward="false" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -131,7 +128,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>forecast-headline</find>
       <find>-headline</find>
       <find>&lt;Sear</find>
       <find>setDisplayedCity</find>
@@ -158,9 +154,10 @@
       <find>map-dee</find>
       <find>2rem 4rem</find>
       <find>forecast</find>
-      <find>100vh</find>
       <find>margin-bottom: 4re</find>
       <find>//</find>
+      <find>100vh</find>
+      <find>#333</find>
     </findStrings>
     <replaceStrings>
       <replace>city</replace>
@@ -187,7 +184,6 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/styles/reset.scss" />
         <option value="$PROJECT_DIR$/src/components/list.js" />
-        <option value="$PROJECT_DIR$/src/styles/blocks/_favorites.scss" />
         <option value="$PROJECT_DIR$/src/assets/sprite.svg" />
         <option value="$PROJECT_DIR$/src/styles/blocks/_search.scss" />
         <option value="$PROJECT_DIR$/src/App.css" />
@@ -199,7 +195,6 @@
         <option value="$PROJECT_DIR$/src/components/errorHandler.js" />
         <option value="$PROJECT_DIR$/src/styles/blocks/_city-detail.scss" />
         <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/src/containers/favorites.js" />
         <option value="$PROJECT_DIR$/src/components/searchInput.js" />
         <option value="$PROJECT_DIR$/src/components/fiveDayForecast.js" />
         <option value="$PROJECT_DIR$/src/containers/cityExpansion.js" />
@@ -216,9 +211,11 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/miss.js" />
         <option value="$PROJECT_DIR$/src/styles/blocks/_missing-notice.scss" />
-        <option value="$PROJECT_DIR$/src/styles/color.scss" />
         <option value="$PROJECT_DIR$/src/styles/blocks/_forecast.scss" />
         <option value="$PROJECT_DIR$/src/styles/blocks/_city-details.scss" />
+        <option value="$PROJECT_DIR$/src/containers/favorites.js" />
+        <option value="$PROJECT_DIR$/src/styles/blocks/_favorites.scss" />
+        <option value="$PROJECT_DIR$/src/styles/color.scss" />
       </list>
     </option>
   </component>
@@ -264,12 +261,6 @@
               <item name="weather-spa" type="b2602c69:ProjectViewProjectNode" />
               <item name="weather-spa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weather-spa" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weather-spa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="weather-spa" type="b2602c69:ProjectViewProjectNode" />
@@ -358,12 +349,12 @@
       <workItem from="1593074464767" duration="15828000" />
       <workItem from="1593145537285" duration="19407000" />
       <workItem from="1593253992380" duration="18525000" />
-      <workItem from="1593291777648" duration="4627000" />
+      <workItem from="1593291777648" duration="5509000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112116000" />
+    <option name="totallyTimeSpent" value="112998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -473,14 +464,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/blocks/_favorites.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -684,16 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/favorites.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="16" column="137" lean-forward="false" selection-start-line="16" selection-start-column="137" selection-end-line="16" selection-end-column="137" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
@@ -744,22 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/blocks/_missing-notice.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/color.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="74" column="48" lean-forward="true" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/blocks/_search.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
@@ -780,6 +737,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="35">
           <caret line="38" column="24" lean-forward="true" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/favorites.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="26" column="59" lean-forward="false" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/blocks/_missing-notice.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="14" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/blocks/_favorites.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="47" column="59" lean-forward="false" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/color.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding />
         </state>
       </provider>

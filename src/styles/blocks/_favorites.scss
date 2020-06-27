@@ -1,16 +1,10 @@
 .favorites {
 
-
-
     &__wrap {
         padding: 4rem;
     }
 
     &__list {
-        /* grid-gap: 10px; */
-        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
-        /* grid-template-rows: 1fr 1fr 1fr 1fr; */
-        /* grid-auto-flow: column; */
         grid-gap: 3.4rem 2.6rem;
         display: grid;
         grid-template-columns: repeat(auto-fill, 20rem);
@@ -44,6 +38,24 @@
             text-align: center;
         }
 
+    }
+
+    &__add-headline {
+        font-size: 2rem;
+        color: map-deep-get($color, "favorites-add-link", "bright");
+
+        .App--dark-mode & {
+            color: map-deep-get($color, "favorites-add-link", "dark");
+        }
+    }
+
+    &__add-link {
+        font-size: 1.2rem;
+        color: map-deep-get($color, "back-home-headline", "bright");
+
+        .App--dark-mode & {
+            color: map-deep-get($color, "back-home-headline", "dark");
+        }
     }
 
 }

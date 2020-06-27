@@ -22,7 +22,7 @@
 
     background-color: map-deep-get($color, "app-bkg-main", "bright");
     &--dark-mode {
-        @include scrimGradient(#333,#000);
+        @include scrimGradient($mild-black,#000);
     }
 }
 
