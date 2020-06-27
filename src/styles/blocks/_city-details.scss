@@ -103,7 +103,11 @@
     &__stats {
 
         display: flex;
-        margin-bottom: 4rem;
+        margin-bottom: 1rem;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 4rem;
+        }
 
         & > button{
             margin-left: auto;

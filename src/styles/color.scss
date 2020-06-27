@@ -82,5 +82,13 @@ $color: (
                 'bright': $bright-mode-bkg-2,
                 'dark':  $dark-mode-highlight,
         ),
+        'back-home-link': (
+                'bright': $bright-mode-bkg-2,
+                'dark':  $dark-mode-highlight-2,
+        ),
+        'back-home-headline': (
+                'bright': #333,
+                'dark':  $dark-mode-highlight,
+        ),
 
 );

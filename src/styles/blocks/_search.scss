@@ -2,8 +2,11 @@
 
     display: flex;
     border-bottom: 1px solid rgba(34, 33, 41, 0.15);
-    padding: 2rem 4rem;
+    padding: 2rem 1rem;
 
+    @media screen and (min-width: 768px) {
+        padding: 2rem 4rem;
+    }
     &--focus {
         border-color: rgba(34,33,41,0.5);
 

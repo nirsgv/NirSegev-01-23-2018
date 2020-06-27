@@ -1,3 +1,27 @@
 .missing-notice {
     min-height: calc(100vh - 15rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__headline {
+        font-size: 2rem;
+        margin-bottom: 0.4rem;
+        color: map-deep-get($color, "back-home-headline", "bright");
+
+        .App--dark-mode & {
+            color: map-deep-get($color, "back-home-headline", "dark");
+        }
+    }
+
+    &__link {
+        font-size: 2rem;
+
+        color: map-deep-get($color, "back-home-link", "bright");
+
+        .App--dark-mode & {
+            color: map-deep-get($color, "back-home-link", "dark");
+        }
+    }
 }

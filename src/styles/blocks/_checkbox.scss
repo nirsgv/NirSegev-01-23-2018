@@ -10,16 +10,17 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      //
-      //@include respond-to(hover-device) {
-      //  display: inline-block;
-      //  width: auto;
-      //}
     }
   }
 
-  &-toggle{
+  &-toggle {
     &__list {
+
+      display: flex;
+      flex-direction: column;
+      @media screen and (min-width: 768px) {
+        display: block;
+      }
     }
 
     &__item {
@@ -27,7 +28,12 @@
       display: inline-block;
 
       &:not(:last-child) {
-        margin-right: 1.6rem;
+        margin-bottom: 0.6rem;
+
+        @media screen and (min-width: 768px) {
+          margin-right: 1.6rem;
+          margin-bottom: 0;
+        }
       }
 
       input + span {
@@ -38,7 +44,7 @@
 
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
 
   display: none;
 
