@@ -12,7 +12,7 @@ const checkLocal = () => {
 };
 
 const initialAppState = {
-    isDarkMode: false,
+    isDarkMode: true,
     isFahrenheit: false,
     searchVal: '',
     // mainCityDisplayKey: 1162619,

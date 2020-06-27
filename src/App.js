@@ -38,14 +38,14 @@ function App({ toggleDarkMode, toggleIsFahrenheit, isDarkMode, isFahrenheit, cit
                     <List baseClassName="checkbox-toggle" addClass={"header__controls"}>
                         <Checkbox
                             checkboxId={'dark-mode-checkbox'}
-                            labelText={'Dark Mode'}
+                            labelText={'Dark Theme'}
                             name={'Dark Mode'}
                             checked={isDarkMode}
                             onChangeCb={toggleDarkMode}
                         />
                         <Checkbox
                             checkboxId={'fahrenheit-checkbox'}
-                            labelText={'Use Fahrenheit'}
+                            labelText={'Fahrenheit'}
                             name={'Use Fahrenheit'}
                             checked={isFahrenheit}
                             onChangeCb={toggleIsFahrenheit}

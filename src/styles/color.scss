@@ -2,8 +2,16 @@ $dark-mode-bkg: #17223b;
 $dark-mode-bkg-2: #263859;
 $dark-mode-highlight: #6b778d;
 $dark-mode-highlight-2: #ff6768;
+$bright-mode-bkg: #f4f6ff;
+$bright-mode-bkg-2: #4f8a8b;
+$bright-mode-highlight: #ffcb74;
+$bright-mode-highlight-2: #ea907a;
 
 $color: (
+        'app-bkg-main': (
+                'bright':  $bright-mode-bkg-2,
+                'dark':  red,
+        ),
         'fav-toggle-btn-off': (
                 'bright':  #aaa,
                 'dark':  $dark-mode-bkg-2,
@@ -13,11 +21,11 @@ $color: (
                 'dark':  $dark-mode-highlight-2,
         ),
         'main-bkg': (
-                'bright':  #fff,
+                'bright':  $bright-mode-bkg,
                 'dark':  $dark-mode-bkg,
         ),
         'header-bkg': (
-                'bright':  #fff,
+                'bright':  $bright-mode-bkg,
                 'dark':  $dark-mode-bkg,
         ),
         'header-text': (
@@ -25,7 +33,7 @@ $color: (
                 'dark':  $dark-mode-highlight-2,
         ),
         'forecast-item-bkg': (
-                'bright':  #fff,
+                'bright':  $bright-mode-bkg,
                 'dark':  #333,
         ),
         'forecast-item-text': (
@@ -67,8 +75,12 @@ $color: (
                 'dark':  $dark-mode-highlight-2,
         ),
         'weather-icon': (
-                'bright': slategrey,
+                'bright': $bright-mode-highlight,
                 'dark':  $dark-mode-highlight-2,
+        ),
+        'forecast-headline': (
+                'bright': $bright-mode-bkg-2,
+                'dark':  $dark-mode-highlight,
         ),
 
 );

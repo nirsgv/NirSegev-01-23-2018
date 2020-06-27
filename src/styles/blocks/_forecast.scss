@@ -79,11 +79,11 @@
         font-size: 3rem;
         padding: 0 0 2rem 0;
         font-weight: 100;
-        color: map-deep-get($color, "weather-icon", "bright");
+        color: map-deep-get($color, "forecast-headline", "bright");
         @extend %color-transition;
 
         .App--dark-mode & {
-            color: map-deep-get($color, "weather-icon", "dark");
+            color: map-deep-get($color, "forecast-headline", "dark");
         }
 
         @media screen and (min-width: 768px) {
