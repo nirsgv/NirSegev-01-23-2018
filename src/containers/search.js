@@ -18,11 +18,9 @@ function Search({ searchVal, setSearchValue, setDisplayedCity, favCities }) {
                          setSearchValue={setSearchValue}
                          />
         </section>
-        {favCities.length &&
         <section className={'search__suggestions'}>
             {searchVal && <SearchSuggestions className={'suggestions'} searchVal={searchVal} setDisplayedCity={setDisplayedCity} />}
         </section>
-        }
         </>
     )
 }

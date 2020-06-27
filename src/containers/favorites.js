@@ -9,14 +9,12 @@ import { Link } from "react-router-dom";
 
 function Favorites({ favCities, isFahrenheit, toggleFavCity, setDisplayedCity }) {
 
-    const st = (item, favCities) => setTimeout(()=>toggleFavCity(item, favCities),1000);
-    const [ dieClass, setDieClass ] = useState('');
     const [ entranceClassName, setEntranceClassName ] = useState('faded-in-from-bottom');
 
     return (
         <div className={`animate ${entranceClassName}`} onAnimationEnd={() => setEntranceClassName('')}>
             <List baseClassName={'favorites'}>
-                {favCities.length ? favCities.map((item, index) => <span key={index} className={dieClass} onAnimationEnd={() => {setDieClass('');toggleFavCity(item, favCities)}}>
+                {favCities.length ? favCities.map((item, index) => <span key={index} onAnimationEnd={() => toggleFavCity(item, favCities)}>
 
                 <Link to={`weather/${item}`} className={''} >
                     <CurrentWeather cityKey={item} isFahrenheit={isFahrenheit} setDisplayedCity={setDisplayedCity} />

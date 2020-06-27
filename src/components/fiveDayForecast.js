@@ -35,15 +35,22 @@ function FiveDayForecast({ cityKey, baseClassName, isFahrenheit }) {
 
     useEffect(() => {
         cityKey && getFiveDayForecast(cityKey, isFahrenheit)
-            .then(data => {setHeadline(Object.assign({}, {
-                category: data.Headline.Category,
-                content: data.Headline.Text
-            })); console.log(data);return data})
-            .then((data) => data.DailyForecasts.map(item => Object.assign({}, {
-                temp: item.Temperature,
-                date: item.Date
-            })))
-            .then((data) => setForecast(data));
+            .then(data => {
+                if (data && data.Code === "400") {
+
+                } else {
+                    setHeadline(Object.assign({}, {
+                        category: data.Headline.Category,
+                        content: data.Headline.Text
+                    }));
+                    const dailyForecasts = data.DailyForecasts.map(item => Object.assign({}, {
+                        temp: item.Temperature,
+                        date: item.Date
+                    }));
+                    setForecast(dailyForecasts);
+                }
+            });
+
         return () => {}
     }, [cityKey, isFahrenheit]);
 

@@ -14,18 +14,27 @@ function CurrentWeather({ cityKey, isFahrenheit, setDisplayedCity }) {
           degreeType = isFahrenheit ? 'Imperial' : 'Metric';
 
     useEffect(() => {
+
         cityKey && getCurrentConditions(cityKey)
-            .then(data => Object.assign({}, {
-                weatherIcon: data.WeatherIcon,
-                weatherText: data.WeatherText,
-                temp: data.Temperature
-            }))
-            .then(data => {setCityWeather(data);console.log(data)});
+            .then(data => {
+                if (data) {
+                    const compactData = Object.assign({}, {
+                        weatherIcon: data.WeatherIcon,
+                        weatherText: data.WeatherText,
+                        temp: data.Temperature
+                    });
+                    return setCityWeather(compactData);
+                }
+            });
+
+
 
         cityKey && getCity(cityKey)
             .then(data => {
-                setCityName(data.EnglishName);
-                setCountryName(data.Country.EnglishName)
+                if (data) {
+                    setCityName(data.EnglishName);
+                    setCountryName(data.Country.EnglishName);
+                }
             });
 
         return () => {}
