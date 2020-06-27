@@ -9,6 +9,7 @@ import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import CityExpansion from "./containers/cityExpansion";
 import Checkbox from "./components/checkbox";
+import Miss from "./components/miss";
 import { createBrowserHistory } from "history";
 import SvgSprite from "./components/svgSprite";
 const customHistory = createBrowserHistory();
@@ -60,6 +61,7 @@ function App({ toggleDarkMode, toggleIsFahrenheit, isDarkMode, isFahrenheit, cit
                         </Route>
                         <Route path="/weather/:id" component={CityExpansion} />
                         <Route path="/favorites" component={Favorites} />
+                        <Route path="/missing" component={Miss} />
 
                     </Switch>
                 </main>

@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
 import { getCity, getCurrentConditions, getType } from "../helpers";
-import RasterSprite from "./rasterSprite";
 import { weatherIconsMap } from '../helpers';
 import SvgSprite from "./svgSprite";
+import { Redirect } from "react-router-dom";
 
 
 function CurrentWeather({ cityKey, isFahrenheit, setDisplayedCity }) {
@@ -11,6 +10,7 @@ function CurrentWeather({ cityKey, isFahrenheit, setDisplayedCity }) {
     const [ cityWeather, setCityWeather ] = useState({}),
           [ cityName, setCityName ] = useState(''),
           [ countryName, setCountryName ] = useState(''),
+          [ failRoute, setFailRoute ] = useState(false),
           degreeType = isFahrenheit ? 'Imperial' : 'Metric';
 
     useEffect(() => {
@@ -24,6 +24,8 @@ function CurrentWeather({ cityKey, isFahrenheit, setDisplayedCity }) {
                         temp: data.Temperature
                     });
                     return setCityWeather(compactData);
+                } else {
+                    setFailRoute(true);
                 }
             });
 
@@ -43,29 +45,22 @@ function CurrentWeather({ cityKey, isFahrenheit, setDisplayedCity }) {
 
     return (
         <>
-            <div className="city-details" onClick={() => setDisplayedCity ? setDisplayedCity(cityKey) : null}>
-                <div className="city-details__weather-icon">
-                    <SvgSprite name={weatherIconsMap[cityWeather.weatherIcon]} />
+            {!failRoute ? (
+                <div className="city-details" onClick={() => setDisplayedCity ? setDisplayedCity(cityKey) : null}>
+                    <div className="city-details__weather-icon">
+                        <SvgSprite name={weatherIconsMap[cityWeather.weatherIcon]} />
+                    </div>
+                    <div className="city-details__aside">
+                        <div className="city-details__name">{`${cityName}, ${countryName}`}</div>
+                        <div className="city-details__text">{cityWeather.weatherText}</div>
+                        <div className="city-details__temp">{`${cityWeather.temp && cityWeather.temp[degreeType].Value}${getType(isFahrenheit)}`}</div>
+                    </div>
                 </div>
-                <div className="city-details__aside">
-                    <div className="city-details__name">{`${cityName}, ${countryName}`}</div>
-                    <div className="city-details__text">{cityWeather.weatherText}</div>
-                    <div className="city-details__temp">{`${cityWeather.temp && cityWeather.temp[degreeType].Value}${getType(isFahrenheit)}`}</div>
-                </div>
-            </div>
+            ) : <Redirect to="/missing" />}
+
         </>
     )
 }
-
-
-CurrentWeather.defaultProps = {
-    baseClassName: 'list',
-};
-
-CurrentWeather.propTypes = {
-    baseClassName: PropTypes.string,
-    children: PropTypes.node,
-};
 
 
 export default CurrentWeather;

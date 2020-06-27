@@ -1,7 +1,4 @@
-// const key = 'S0su97sJn7O1s0GZy5YqbaBJg2U0ep8M';
-// const key = 'zmNAKJCZG5PaTcd6yCZ8fqWGHGGac4J2';
-// const key = '7SQlNPpxqISsSHJjy9XG1wOK8Krh0XMK';
-// const key = 'gfiUEHrGu0gHciWYzQPHuVQ3HLx0V6Wf';
+
 const key = 'WdmUfUN7JeOlUdxIiVdk8SBtA3JbaNMN';
 
 const getCity = async (cityKey) => {
@@ -129,11 +126,6 @@ const weatherIconsMap = {
 };
 
 
-
-// autoComplete('Stockholm')
-//     .then(data => console.log(data))
-//     .catch(err => console.log(err));
-
 export {
     getCity,
     autoComplete,
@@ -144,6 +136,4 @@ export {
     weatherIconsMap,
     checkLocal,
     isItEveningYet,
-    debounce,
-    throttle,
 }

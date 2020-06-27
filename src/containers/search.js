@@ -7,7 +7,7 @@ import { setSearchValue, setDisplayedCity, toggleFavCity } from "../actions";
 import SvgSprite from "../components/svgSprite";
 
 
-function Search({ searchVal, setSearchValue, setDisplayedCity, favCities }) {
+function Search({ searchVal, setSearchValue, setDisplayedCity }) {
 
     return (
         <>

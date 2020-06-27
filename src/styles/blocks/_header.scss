@@ -1,11 +1,15 @@
 .header {
     height: 8rem;
     display: flex;
-    padding: 0 4rem;
+    padding: 0 2rem;
     color: map-deep-get($color, "header-text", "bright");
     background-color: map-deep-get($color, "header-bkg", "bright");
     @extend %color-transition;
     @extend %bkg-color-transition;
+
+    @media screen and (min-width: 768px) {
+        padding: 0 4rem;
+    }
 
     .App--dark-mode & {
         color: map-deep-get($color, "header-text", "dark");
