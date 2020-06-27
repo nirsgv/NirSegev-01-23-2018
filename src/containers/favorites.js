@@ -11,10 +11,12 @@ function Favorites({ favCities, isFahrenheit, toggleFavCity, setDisplayedCity })
 
     const st = (item, favCities) => setTimeout(()=>toggleFavCity(item, favCities),1000);
     const [ dieClass, setDieClass ] = useState('');
+    const [ entranceClassName, setEntranceClassName ] = useState('faded-in-from-bottom');
 
     return (
-        <List baseClassName={'favorites'}>
-            {favCities.map((item, index) => <span key={index} className={dieClass} onAnimationEnd={() => {setDieClass('');toggleFavCity(item, favCities)}}>
+        <div className={`animate ${entranceClassName}`} onAnimationEnd={() => setEntranceClassName('')}>
+            <List baseClassName={'favorites'}>
+                {favCities.length ? favCities.map((item, index) => <span key={index} className={dieClass} onAnimationEnd={() => {setDieClass('');toggleFavCity(item, favCities)}}>
 
                 <Link to={`weather/${item}`} className={''} >
                     <CurrentWeather cityKey={item} isFahrenheit={isFahrenheit} setDisplayedCity={setDisplayedCity} />
@@ -23,8 +25,9 @@ function Favorites({ favCities, isFahrenheit, toggleFavCity, setDisplayedCity })
                     <button className={'favorites__remove-btn'} onClick={()=>toggleFavCity(item, favCities)}>Remove</button>
                 </div>
 
-            </span>)}
-        </List>
+            </span>) : 'Add favorite items '}
+            </List>
+        </div>
     );
 }
 

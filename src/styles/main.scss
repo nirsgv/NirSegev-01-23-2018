@@ -86,10 +86,19 @@ span.die {
     animation-duration: .75s;
     animation-timing-function: ease-out;
 }
-.faded-in-from-bottom {
-}
 
 @keyframes die {
     from {opacity: 1; }
     to {opacity: 0;}
+}
+
+.faded-in-from-bottom {
+    animation-name: fadedInFromBottom;
+    animation-duration: 1.1s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes fadedInFromBottom {
+    from {opacity: .25; transform: translate3d(0rem, .5rem, 0)}
+    to {opacity: 1; transform: translate3d(0rem, 0, 0)}
 }

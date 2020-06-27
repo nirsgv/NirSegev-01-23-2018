@@ -91,3 +91,17 @@
         }
     }
 }
+
+.city-detail {
+    padding: 2rem 4rem;
+
+    &__stats {
+
+        display: flex;
+        margin-bottom: 4rem;
+
+        & > button{
+            margin-left: auto;
+        }
+    }
+}

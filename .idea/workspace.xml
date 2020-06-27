@@ -2,12 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e4b775f-1fec-41fd-ad58-4ef869370ea4" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/errorHandler.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/assets/raster-weather-icons-sprite.png" afterPath="$PROJECT_DIR$/src/assets/raster-weather-icons-sprite.png" />
       <change beforePath="$PROJECT_DIR$/src/components/currentWeather.js" afterPath="$PROJECT_DIR$/src/components/currentWeather.js" />
       <change beforePath="$PROJECT_DIR$/src/components/searchInput.js" afterPath="$PROJECT_DIR$/src/components/searchInput.js" />
       <change beforePath="$PROJECT_DIR$/src/containers/cityExpansion.js" afterPath="$PROJECT_DIR$/src/containers/cityExpansion.js" />
+      <change beforePath="$PROJECT_DIR$/src/containers/favorites.js" afterPath="$PROJECT_DIR$/src/containers/favorites.js" />
       <change beforePath="$PROJECT_DIR$/src/containers/search.js" afterPath="$PROJECT_DIR$/src/containers/search.js" />
       <change beforePath="$PROJECT_DIR$/src/helpers.js" afterPath="$PROJECT_DIR$/src/helpers.js" />
-      <change beforePath="$PROJECT_DIR$/src/styles/blocks/_forecast.scss" afterPath="$PROJECT_DIR$/src/styles/blocks/_forecast.scss" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/styles/blocks/_city-detail.scss" afterPath="$PROJECT_DIR$/src/styles/blocks/_city-detail.scss" />
+      <change beforePath="$PROJECT_DIR$/src/styles/blocks/_city-details.scss" afterPath="$PROJECT_DIR$/src/styles/blocks/_city-details.scss" />
+      <change beforePath="$PROJECT_DIR$/src/styles/main.scss" afterPath="$PROJECT_DIR$/src/styles/main.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,202 +28,124 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.58898306">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="color.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/styles/color.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="161">
-                  <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-776">
-                  <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-                  <folding>
-                    <element signature="e#0#40#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="helpers.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/helpers.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="166">
-                  <caret line="57" column="14" lean-forward="false" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="14" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="checkbox.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/checkbox.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="322">
-                  <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/App.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="317">
-                  <caret line="40" column="44" lean-forward="false" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
-                  <folding>
-                    <element signature="e#0#40#0" expanded="true" />
-                    <marker date="1593262422000" expanded="true" signature="1623:2319" ph="..." />
-                    <marker date="1593262422000" expanded="true" signature="1658:1766" ph="..." />
-                    <marker date="1593262422000" expanded="true" signature="1986:2099" ph="..." />
-                    <marker date="1593262422000" expanded="true" signature="2369:2755" ph="..." />
-                    <marker date="1593262422000" expanded="true" signature="2398:2731" ph="..." />
-                    <marker date="1593262422000" expanded="true" signature="2445:2546" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/actions/index.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="684">
-                  <caret line="44" column="18" lean-forward="true" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
-                  <folding>
-                    <element signature="e#0#51#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="cityExpansion.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/containers/cityExpansion.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="379">
-                  <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="currentWeather.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/components/currentWeather.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="414">
-                  <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="search.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/containers/search.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="281">
-                  <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="favorites.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/containers/favorites.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="searchInput.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/components/searchInput.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="253">
-                  <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="38" />
-                  <folding>
-                    <element signature="e#0#26#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/styles/main.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_city-details.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/styles/blocks/_city-details.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1081">
-                  <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_forecast.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/styles/blocks/_forecast.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1863">
-                  <caret line="81" column="54" lean-forward="false" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_header.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/styles/blocks/_header.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="355">
-                  <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="24" selection-end-column="9" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="_checkbox.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/styles/blocks/_checkbox.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1426">
-                  <caret line="62" column="45" lean-forward="false" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="searchInput.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/searchInput.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_city-details.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/blocks/_city-details.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/styles/main.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="584">
+              <caret line="96" column="27" lean-forward="false" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="currentWeather.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/currentWeather.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fiveDayForecast.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/fiveDayForecast.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="966">
+              <caret line="45" column="47" lean-forward="true" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cityExpansion.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/cityExpansion.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+              <folding>
+                <marker date="1593278661000" expanded="true" signature="972:1239" ph="..." />
+                <marker date="1593278661000" expanded="true" signature="1003:1120" ph="..." />
+                <marker date="1593278661000" expanded="true" signature="1088:1105" ph="..." />
+                <marker date="1593278661000" expanded="true" signature="1220:1233" ph="..." />
+                <marker date="1593278661000" expanded="true" signature="1344:1374" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helpers.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/helpers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="favorites.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/containers/favorites.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="518">
+              <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+                <marker date="1593279776000" expanded="true" signature="806:1013" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/containers/search.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="errorHandler.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/errorHandler.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>max-height</find>
-      <find>margin</find>
-      <find>Raster</find>
       <find>ICE</find>
       <find>wrap-for-separator</find>
       <find>CurrentWeather</find>
@@ -243,6 +173,9 @@
       <find>useEffect</find>
       <find>category</find>
       <find>dark mode</find>
+      <find>ErrorHand</find>
+      <find>city-detail</find>
+      <find>weather-icons-sprite</find>
     </findStrings>
     <replaceStrings>
       <replace>city</replace>
@@ -262,7 +195,6 @@
         <option value="$PROJECT_DIR$/src/components/svgSprite.js" />
         <option value="$PROJECT_DIR$/src/data/localImgData.js" />
         <option value="$PROJECT_DIR$/src/styles/blocks/_fav-toggle.scss" />
-        <option value="$PROJECT_DIR$/src/styles/blocks/_city-detail.scss" />
         <option value="$PROJECT_DIR$/src/components/rasterSprite.js" />
         <option value="$PROJECT_DIR$/src/styles/raster-weather-icons.scss" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -270,9 +202,7 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/styles/reset.scss" />
         <option value="$PROJECT_DIR$/src/components/list.js" />
-        <option value="$PROJECT_DIR$/src/containers/favorites.js" />
         <option value="$PROJECT_DIR$/src/styles/blocks/_favorites.scss" />
-        <option value="$PROJECT_DIR$/src/components/fiveDayForecast.js" />
         <option value="$PROJECT_DIR$/src/assets/sprite.svg" />
         <option value="$PROJECT_DIR$/src/styles/blocks/_search.scss" />
         <option value="$PROJECT_DIR$/src/App.css" />
@@ -281,21 +211,25 @@
         <option value="$PROJECT_DIR$/src/styles/blocks/_fav-toggle-btn.scss" />
         <option value="$PROJECT_DIR$/src/styles/blocks/_suggestion.scss" />
         <option value="$PROJECT_DIR$/src/styles/blocks/_main-nav.scss" />
-        <option value="$PROJECT_DIR$/src/styles/blocks/_city-details.scss" />
         <option value="$PROJECT_DIR$/src/styles/blocks/_checkbox.scss" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/styles/blocks/_forecast.scss" />
         <option value="$PROJECT_DIR$/src/styles/color.scss" />
-        <option value="$PROJECT_DIR$/src/styles/main.scss" />
         <option value="$PROJECT_DIR$/src/reducers/index.js" />
         <option value="$PROJECT_DIR$/src/components/searchSuggestions.js" />
         <option value="$PROJECT_DIR$/src/actions/index.js" />
-        <option value="$PROJECT_DIR$/src/containers/cityExpansion.js" />
-        <option value="$PROJECT_DIR$/src/containers/search.js" />
         <option value="$PROJECT_DIR$/src/components/checkbox.js" />
-        <option value="$PROJECT_DIR$/src/helpers.js" />
+        <option value="$PROJECT_DIR$/src/components/errorHandler.js" />
         <option value="$PROJECT_DIR$/src/components/searchInput.js" />
         <option value="$PROJECT_DIR$/src/components/currentWeather.js" />
+        <option value="$PROJECT_DIR$/src/components/fiveDayForecast.js" />
+        <option value="$PROJECT_DIR$/src/containers/cityExpansion.js" />
+        <option value="$PROJECT_DIR$/src/styles/blocks/_city-detail.scss" />
+        <option value="$PROJECT_DIR$/src/styles/main.scss" />
+        <option value="$PROJECT_DIR$/src/styles/blocks/_city-details.scss" />
+        <option value="$PROJECT_DIR$/src/containers/search.js" />
+        <option value="$PROJECT_DIR$/src/helpers.js" />
+        <option value="$PROJECT_DIR$/src/containers/favorites.js" />
       </list>
     </option>
   </component>
@@ -341,6 +275,12 @@
               <item name="weather-spa" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="weather-spa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="weather-spa" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -364,15 +304,15 @@
     <property name="node.js.selected.package.standard" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/containers" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/styles" />
       <recent name="$PROJECT_DIR$/src/styles/blocks" />
-      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/containers" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -409,12 +349,12 @@
       <workItem from="1593067085313" duration="2991000" />
       <workItem from="1593074464767" duration="15828000" />
       <workItem from="1593145537285" duration="19407000" />
-      <workItem from="1593253992380" duration="6623000" />
+      <workItem from="1593253992380" duration="11636000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95587000" />
+    <option name="totallyTimeSpent" value="100600000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -453,16 +393,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/actions/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="14" column="65" lean-forward="false" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/helpers.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -510,13 +440,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/shows.json" />
     <entry file="file://$PROJECT_DIR$/public/sprite.svg" />
-    <entry file="file://$PROJECT_DIR$/src/styles/blocks/_city-detail.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/rasterSprite.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -558,6 +481,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="460">
           <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -585,14 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/fiveDayForecast.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/reset.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
@@ -605,6 +521,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="147" lean-forward="false" selection-start-line="0" selection-start-column="147" selection-end-line="0" selection-end-column="147" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -682,42 +599,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/blocks/_city-details.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1081">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/blocks/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="24" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/blocks/_checkbox.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1426">
-          <caret line="62" column="45" lean-forward="false" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="556">
           <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/blocks/_forecast.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1863">
-          <caret line="81" column="54" lean-forward="false" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
           <folding />
         </state>
       </provider>
@@ -738,66 +623,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-776">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/search.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="19" column="18" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/favorites.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/helpers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="57" column="14" lean-forward="false" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/checkbox.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
           <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/searchInput.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="38" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -838,21 +669,138 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/containers/cityExpansion.js">
+    <entry file="file://$PROJECT_DIR$/src/styles/blocks/_forecast.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        <state relative-caret-position="1863">
+          <caret line="81" column="54" lean-forward="false" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/blocks/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="24" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/blocks/_checkbox.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1426">
+          <caret line="62" column="45" lean-forward="false" selection-start-line="62" selection-start-column="45" selection-end-line="62" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-776">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/searchInput.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/errorHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/currentWeather.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        <state relative-caret-position="367">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/fiveDayForecast.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="966">
+          <caret line="45" column="47" lean-forward="true" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/blocks/_city-detail.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="96" column="27" lean-forward="false" selection-start-line="96" selection-start-column="27" selection-end-line="96" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/blocks/_city-details.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="93" column="0" lean-forward="true" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/search.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/cityExpansion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="43" lean-forward="true" selection-start-line="5" selection-start-column="43" selection-end-line="5" selection-end-column="43" />
+          <folding>
+            <marker date="1593278661000" expanded="true" signature="972:1239" ph="..." />
+            <marker date="1593278661000" expanded="true" signature="1003:1120" ph="..." />
+            <marker date="1593278661000" expanded="true" signature="1088:1105" ph="..." />
+            <marker date="1593278661000" expanded="true" signature="1220:1233" ph="..." />
+            <marker date="1593278661000" expanded="true" signature="1344:1374" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helpers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/containers/favorites.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="27" column="43" lean-forward="false" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+            <marker date="1593279776000" expanded="true" signature="806:1013" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

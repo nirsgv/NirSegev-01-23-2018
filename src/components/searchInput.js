@@ -8,7 +8,7 @@ function SearchInput({ searchVal, setSearchValue, className }) {
                id="search" value={searchVal}
                placeholder="Search for location..."
                className={className}
-               autocomplete="off"
+               autoComplete="off"
                onChange={e => throttle(setSearchValue(e.target.value),3000)}
         />
     )

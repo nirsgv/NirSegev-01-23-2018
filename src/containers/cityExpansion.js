@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import FiveDayForecast from "../components/fiveDayForecast";
 import CurrentWeather from "../components/currentWeather";
 import FavToggle from "../components/favToggle";
@@ -6,11 +6,13 @@ import Search from "./search";
 import { bindActionCreators } from "redux";
 import { resetSearch, toggleFavCity } from "../actions";
 import { connect } from "react-redux";
+import ErrorHandler from "../components/errorHandler";
 
 
 function CityExpansion({ cityKey , favCities, toggleFavCity, isFahrenheit , match, resetSearch }) {
 
     const paramKey = match.params.id;
+    const [ entranceClassName, setEntranceClassName ] = useState('faded-in-from-bottom');
 
     useEffect(() => {
         resetSearch();
@@ -21,9 +23,11 @@ function CityExpansion({ cityKey , favCities, toggleFavCity, isFahrenheit , matc
     return (
         <>
         <Search />
-        <section className="city-detail">
+        <section className={`city-detail ${entranceClassName}`} onAnimationEnd={() => setEntranceClassName('')}>
             <div className="city-detail__stats">
-                <CurrentWeather cityKey={paramKey} isFahrenheit={isFahrenheit}/>
+                <ErrorHandler>
+                    <CurrentWeather cityKey={paramKey} isFahrenheit={isFahrenheit}/>
+                </ErrorHandler>
                 <FavToggle cityKey={paramKey} favCities={favCities} toggleFavCity={toggleFavCity}/>
             </div>
             <FiveDayForecast cityKey={paramKey} baseClassName={'forecast'} isFahrenheit={isFahrenheit}/>
