@@ -48,6 +48,13 @@ const getAverage = (numA, numB) => Math.floor((Number(numA) + Number(numB)) / 2)
 
 const getType = (isFahrenheit) => isFahrenheit ? '°F' : '°C';
 
+const checkLocal = () => {
+    const localData = localStorage.getItem("weather-spa");
+    return localData ? JSON.parse(localData) : []
+};
+
+const isItEveningYet = () => new Date().getHours() >= 17;
+
 const weatherIconsMap = {
     '1':'SUNNY',
     '2':'MOSTLY_SUNNY',
@@ -108,5 +115,7 @@ export {
     getFiveDayForecast,
     getAverage,
     getType,
-    weatherIconsMap
+    weatherIconsMap,
+    checkLocal,
+    isItEveningYet,
 }

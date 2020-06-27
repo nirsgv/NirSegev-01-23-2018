@@ -20,7 +20,7 @@ function Search({ searchVal, setSearchValue, setDisplayedCity, favCities }) {
         </section>
         {favCities.length &&
         <section className={'search__suggestions'}>
-            <SearchSuggestions className={'suggestions'} searchVal={searchVal} setDisplayedCity={setDisplayedCity} />
+            {searchVal && <SearchSuggestions className={'suggestions'} searchVal={searchVal} setDisplayedCity={setDisplayedCity} />}
         </section>
         }
         </>

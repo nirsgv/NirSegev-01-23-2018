@@ -3,6 +3,7 @@ import { TOGGLE_DARK_MODE } from '../reducers';
 import { SET_SEARCH_VALUE } from '../reducers';
 import { SET_DISPLAYED_CITY } from '../reducers';
 import { TOGGLE_FAV_CITY } from '../reducers';
+import { RESET_SEARCH } from '../reducers';
 
 
 function toggleFavCity(cityKey, favCities) {
@@ -37,7 +38,6 @@ function toggleDarkMode() {
 }
 
 function setSearchValue(val) {
-    console.log(val);
     const action = {
         type: SET_SEARCH_VALUE,
         payload: val
@@ -46,10 +46,16 @@ function setSearchValue(val) {
 }
 
 function setDisplayedCity(val) {
-    console.log(val);
     const action = {
         type: SET_DISPLAYED_CITY,
         payload: val
+    };
+    return action;
+}
+
+function resetSearch() {
+    const action = {
+        type: RESET_SEARCH,
     };
     return action;
 }
@@ -59,5 +65,6 @@ export  {
     toggleDarkMode,
     toggleIsFahrenheit,
     setSearchValue,
-    setDisplayedCity
+    setDisplayedCity,
+    resetSearch
 }

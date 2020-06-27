@@ -83,7 +83,6 @@ function SearchSuggestions({ searchVal, setDisplayedCity, className }) {
 
     useEffect(() => {
         searchVal && autoComplete(searchVal)
-            .then(data => {console.log(data);return data;})
             .then(data => data.map(suggestion => Object.assign({}, {
                 city: suggestion.EnglishName,
                 country: suggestion.Country.EnglishName,

@@ -1,28 +1,23 @@
 import { combineReducers } from 'redux';
+import { checkLocal, isItEveningYet } from "../helpers";
 export const TOGGLE_FAV_CITY = 'TOGGLE_FAV_CITY';
 export const TOGGLE_IS_FAHRENHEIT = 'TOGGLE_IS_FAHRENHEIT';
 export const TOGGLE_DARK_MODE = 'TOGGLE_DARK_MODE';
 export const SET_SEARCH_VALUE = 'SET_SEARCH_VALUE';
 export const SET_DISPLAYED_CITY = 'SET_DISPLAYED_CITY';
+export const RESET_SEARCH = 'RESET_SEARCH';
 
-
-const checkLocal = () => {
-    const localData = localStorage.getItem("weather-spa");
-    return localData ? JSON.parse(localData) : []
-};
 
 const initialAppState = {
-    isDarkMode: true,
     isFahrenheit: false,
     searchVal: '',
-    // mainCityDisplayKey: 1162619,
     mainCityDisplayKey: '215854',
+    isDarkMode: isItEveningYet(),
     favCities: checkLocal(),
 };
 
 function appData(state = initialAppState, action) {
     switch (action.type) {
-
 
         case TOGGLE_IS_FAHRENHEIT:
             return {
@@ -52,6 +47,12 @@ function appData(state = initialAppState, action) {
             return {
                 ...state,
                 mainCityDisplayKey: action.payload
+            };
+
+        case RESET_SEARCH:
+            return {
+                ...state,
+                searchVal: '',
             };
 
         default:

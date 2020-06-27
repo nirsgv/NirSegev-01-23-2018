@@ -1,27 +1,34 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import FiveDayForecast from "../components/fiveDayForecast";
 import CurrentWeather from "../components/currentWeather";
 import FavToggle from "../components/favToggle";
 import Search from "./search";
 import { bindActionCreators } from "redux";
-import { toggleFavCity } from "../actions";
+import { resetSearch, toggleFavCity } from "../actions";
 import { connect } from "react-redux";
+import {autoComplete} from "../helpers";
 
 
-function CityExpansion({ cityKey , favCities, toggleFavCity, isFahrenheit ,match, history}) {
-    console.log(match);
-    console.log(cityKey);
-    const t = match.params.id;
+function CityExpansion({ cityKey , favCities, toggleFavCity, isFahrenheit , match, resetSearch }) {
+
+    const paramKey = match.params.id;
+
+    useEffect(() => {
+        resetSearch()
+
+        return () => {}
+    }, [cityKey]);
+
     return (
         <>
         <Search />
         <section className="city-detail">
             <div className="city-detail__stats">
-                <CurrentWeather cityKey={t} isFahrenheit={isFahrenheit}/>
-                <FavToggle cityKey={t} favCities={favCities} toggleFavCity={toggleFavCity}/>
+                <CurrentWeather cityKey={paramKey} isFahrenheit={isFahrenheit}/>
+                <FavToggle cityKey={paramKey} favCities={favCities} toggleFavCity={toggleFavCity}/>
             </div>
-            <FiveDayForecast cityKey={t} baseClassName={'forecast'} isFahrenheit={isFahrenheit}/>
+            <FiveDayForecast cityKey={paramKey} baseClassName={'forecast'} isFahrenheit={isFahrenheit}/>
         </section>
         </>
     )
@@ -44,7 +51,8 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => bindActionCreators({
-    toggleFavCity
+    toggleFavCity,
+    resetSearch
 }, dispatch);
 
 
