@@ -21,29 +21,20 @@
     height: 100vh;
     @extend %bkg-color-transition;
 
-    &--bright-mode {
-        //@include scrimGradient(#faa,#f00);
-    }
-
-    //&--dark-mode {
-    //    //@include scrimGradient(#333,#000);
+    //&--bright-mode {
+    //    @include scrimGradient(#faa,#f00);
     //}
-    background-color: map-deep-get($color, "app-bkg-main", "bright");
 
+    background-color: map-deep-get($color, "app-bkg-main", "bright");
     &--dark-mode {
-        //background-color: map-deep-get($color, "app-bkg-main", "dark");
         @include scrimGradient(#333,#000);
     }
 }
 
 body {
-    //font-family: Verdana, Geneva, sans-serif;
     font-family: 'Open Sans', sans-serif;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-
 }
 
 main {

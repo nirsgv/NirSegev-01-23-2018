@@ -66,10 +66,10 @@ const exampleRes = [
     }
 ];
 
-function Suggestion({ index, item }) {
+function Suggestion({ index, item, setDisplayedCity }) {
     const { city, country, cityKey } = item;
     return (
-        <Link to={`/weather/${cityKey}`} className={''}>
+        <Link to={`/weather/${cityKey}`} className={''} onClick={()=>setDisplayedCity(cityKey)}>
             <h2>{`${city}, ${country}`}</h2>
         </Link>
 
