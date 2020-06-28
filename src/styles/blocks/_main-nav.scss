@@ -15,10 +15,8 @@
     }
 
     &__link {
-
         height: 100%;
         text-decoration: none;
-
         font-size: 1.2rem;
 
         @media screen and (min-width: 768px) {
@@ -26,12 +24,14 @@
         }
 
         color: map-deep-get($color, "main-nav-link", "bright");
+
         .App--dark-mode & {
             color: map-deep-get($color, "main-nav-link", "dark");
         }
 
         &--active {
             color: map-deep-get($color, "main-nav-link-active", "bright");
+
             .App--dark-mode & {
                 color: map-deep-get($color, "main-nav-link-active", "dark");
             }

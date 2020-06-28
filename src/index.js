@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { createStore } from 'redux';
@@ -8,7 +7,7 @@ import { Provider } from 'react-redux';
 import rootReducer from './reducers';
 
 const store = createStore(rootReducer);
-store.subscribe(() => console.log('store.getState( i am subscribed )', store.getState()));
+// store.subscribe(() => console.log('store.getState( i am subscribed )', store.getState()));
 
 ReactDOM.render(
     <Provider store={store}>

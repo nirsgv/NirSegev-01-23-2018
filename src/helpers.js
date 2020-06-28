@@ -1,5 +1,4 @@
-
-const key = 'WdmUfUN7JeOlUdxIiVdk8SBtA3JbaNMN';
+import { key } from "./env_pre";
 
 const getCity = async (cityKey) => {
     try {
@@ -54,29 +53,6 @@ const checkLocal = () => {
 };
 
 const isItEveningYet = () => new Date().getHours() >= 17;
-
-const debounce = ( cb, delay ) => {
-    let inDebounce;
-    return function(){
-        const context = this;
-        const args = arguments;
-        clearTimeout(inDebounce);
-        inDebounce = setTimeout(() => cb.apply(context, args), delay);
-    }
-};
-
-const throttle = ( cb, delay ) => {
-    let inThrottle;
-    return function(){
-        const context = this;
-        const args = arguments;
-        if (!inThrottle) {
-            cb.apply(context, args);
-            inThrottle = true;
-            setTimeout(() => inThrottle = false, delay)
-        }
-    }
-};
 
 const weatherIconsMap = {
     '1':'SUNNY',

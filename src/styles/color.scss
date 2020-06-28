@@ -10,8 +10,8 @@ $mild-black: #333;
 
 $color: (
         'app-bkg-main': (
-                'bright':  $bright-mode-bkg-2,
-                'dark':  red,
+                'bright':  $bright-mode-bkg,
+                'dark': $mild-black ,
         ),
         'fav-toggle-btn-off': (
                 'bright':  #aaa,
