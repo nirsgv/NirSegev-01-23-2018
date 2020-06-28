@@ -17,9 +17,9 @@
 .App {
     min-height: 100vh;
     padding-bottom: 1rem;
+    background-color: $bright-mode-bkg-2;
     @extend %bkg-color-transition;
 
-    background-color: map-deep-get($color, "app-bkg-main", "bright");
     &--dark-mode {
         @include scrimGradient($mild-black,#000);
     }
@@ -32,10 +32,11 @@ body {
 }
 
 main {
-    margin: 1.2rem 1.2rem 0;
+    margin: 1.2rem auto;
+    max-width: 124rem;
     padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0px 5px 5px #33333311;
+    border-radius: .8rem;
+    box-shadow: 0 .5rem .5rem #33333311;
     background-color: map-deep-get($color, "main-bkg", "bright");
 
     .App--dark-mode & {
