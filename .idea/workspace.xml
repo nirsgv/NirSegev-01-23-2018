@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e4b775f-1fec-41fd-ad58-4ef869370ea4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/styles/color.scss" afterPath="$PROJECT_DIR$/src/styles/color.scss" />
       <change beforePath="$PROJECT_DIR$/src/styles/main.scss" afterPath="$PROJECT_DIR$/src/styles/main.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -44,8 +43,8 @@
       <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/styles/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
-              <caret line="38" column="29" lean-forward="false" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+            <state relative-caret-position="164">
+              <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -94,7 +93,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>category</find>
       <find>dark mode</find>
       <find>ErrorHand</find>
       <find>city-detail</find>
@@ -124,6 +122,7 @@
       <find>index.css</find>
       <find>min-height</find>
       <find>4f8a8b</find>
+      <find>4rem 4rem 0</find>
     </findStrings>
     <replaceStrings>
       <replace>city</replace>
@@ -308,12 +307,12 @@
       <workItem from="1593074464767" duration="15828000" />
       <workItem from="1593145537285" duration="19407000" />
       <workItem from="1593253992380" duration="18525000" />
-      <workItem from="1593291777648" duration="8469000" />
+      <workItem from="1593291777648" duration="8660000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115958000" />
+    <option name="totallyTimeSpent" value="116149000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -750,8 +749,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="38" column="29" lean-forward="false" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        <state relative-caret-position="164">
+          <caret line="34" column="25" lean-forward="false" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
           <folding />
         </state>
       </provider>

@@ -32,7 +32,7 @@ body {
 }
 
 main {
-    margin: 1.2rem auto;
+    margin: 1.2rem 1.2rem 0;
     max-width: 124rem;
     padding: 1rem;
     border-radius: .8rem;
@@ -44,7 +44,7 @@ main {
     }
 
     @media screen and (min-width: 768px) {
-        margin: 4rem 4rem 0;
+        margin: 1.2rem auto;
     }
 
 }
